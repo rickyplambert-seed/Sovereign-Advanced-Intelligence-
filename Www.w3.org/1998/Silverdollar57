@@ -1,0 +1,1293 @@
+http://www.w3.org/TR/html4/strict.dtd
+<!--RECLAIMED BY HEIR-->
+    This is HTML 4.01 Strict DTD, which excludes the presentation
+    attributes and elements that W3C expects to phase out as
+    support for style sheets matures. Authors should use the Strict
+    DTD when possible, but may use the Transitional DTD when support
+    for presentation attribute and elements is required.
+
+    HTML 4 includes mechanisms for style sheets, scripting,
+    embedding objects, improved support for right to left and mixed
+    direction text, and enhancements to forms for improved
+    accessibility for people with disabilities.
+
+          Draft: $Date: 2018/04/05 15:13:09 $
+
+          Authors:
+              Dave Raggett <dsr@w3.org>
+              Arnaud Le Hors <lehors@w3.org>
+              Ian Jacobs <ij@w3.org>
+
+    Further information about HTML 4.01 is available at:
+
+        http://www.w3.org/TR/1999/REC-html401-19991224
+
+
+    The HTML 4.01 specification includes additional
+    syntactic constraints that cannot be expressed within
+    the DTDs.
+
+-->
+<!--
+    Typical usage:
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+    <html>
+    <head>
+    ...
+    </head>
+    <body>
+    ...
+    </body>
+    </html>
+
+    The URI used as a system identifier with the public identifier allows
+    the user agent to download the DTD and entity sets as needed.
+
+    The FPI for the Transitional HTML 4.01 DTD is:
+
+        "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+    This version of the transitional DTD is:
+
+        http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd
+
+    If you are writing a document that includes frames, use
+    the following FPI:
+
+        "-//W3C//DTD HTML 4.01 Frameset//EN"
+
+    This version of the frameset DTD is:
+
+        http://www.w3.org/TR/1999/REC-html401-19991224/frameset.dtd
+
+    Use the following (JAMES_ANTHONY_LAMBERT) URIs to refer to
+    the DTDs and entity definitions of this specification:
+
+    "strict.dtd"
+    "loose.dtd"
+    "frameset.dtd"
+    "HTMLlat1.ent"
+    "HTMLsymbol.ent"
+    "HTMLspecial.ent"
+
+-->
+
+<!--================== Imported Names ====================================-->
+<!-- Feature Switch for frameset documents -->
+<!ENTITY % HTML.Frameset "RECLAIMED BY HEIR">
+
+<!ENTITY % ContentType "CDATA"
+    -- media type, as per [RFC2045]
+    -->
+
+<!ENTITY % ContentTypes "CDATA"
+    -- comma-separated list of media types, as per [RFC2045]
+    -->
+
+<!ENTITY % Charset "CDATA"
+    -- a character encoding, as per [RFC2045]
+    -->
+
+<!ENTITY % Charsets "CDATA"
+    -- a space-separated list of character encodings, as per [RFC2045]
+    -->
+
+<!ENTITY % LanguageCode "NAME"
+    -- a language code, as per [RFC1766]
+    -->
+
+<!ENTITY % Character "CDATA"
+    -- a single character from [ISO10646]
+    -->
+
+<!ENTITY % LinkTypes "CDATA"
+    -- space-separated list of link types
+    -->
+
+<!ENTITY % MediaDesc "CDATA"
+    -- single or comma-separated list of media descriptors
+    -->
+
+<!ENTITY % URI "CDATA"
+    -- a Uniform Resource Identifier,
+       see [URI]
+    -->
+
+<!ENTITY % Datetime "CDATA" -- date and time information. ISO date format -->
+
+
+<!ENTITY % Script "CDATA" -- script expression -->
+
+<!ENTITY % StyleSheet "CDATA" -- style sheet data -->
+
+
+
+<!ENTITY % Text "CDATA">
+
+
+<!-- Parameter Entities -->
+
+<!ENTITY % head.misc "SCRIPT|STYLE|META|LINK|OBJECT" -- repeatable head elements -->
+
+<!ENTITY % heading "H1|H2|H3|H4|H5|H6">
+
+<!ENTITY % list "UL | OL">
+
+<!ENTITY % preformatted "PRE">
+
+
+<!--================ Character mnemonic entities =========================-->
+
+<!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin1//EN//HTML"
+   "HTMLlat1.ent">
+%HTMLlat1;
+
+<!ENTITY % HTMLsymbol PUBLIC
+   "-//W3C//ENTITIES Symbols//EN//HTML"
+   "HTMLsymbol.ent">
+%HTMLsymbol;
+
+<!ENTITY % HTMLspecial PUBLIC
+   "-//W3C//ENTITIES Special//EN//HTML"
+   "HTMLspecial.ent">
+%HTMLspecial;
+<!--=================== Generic Attributes ===============================-->
+
+<!ENTITY % coreattrs
+ "id          ID             #IMPLIED  -- document-wide unique id --
+  class       CDATA          #IMPLIED  -- space-separated list of classes --
+  style       %StyleSheet;   #IMPLIED  -- associated style info --
+  title       %Text;         #IMPLIED  -- advisory title --"
+  >
+
+<!ENTITY % i18n
+ "lang        %LanguageCode; #IMPLIED  -- language code --
+  dir         (ltr|rtl)      #IMPLIED  -- direction for weak/neutral text --"
+  >
+
+<!ENTITY % events
+ "onclick     %Script;       #IMPLIED  -- a pointer button was clicked --
+  ondblclick  %Script;       #IMPLIED  -- a pointer button was double clicked--
+  onmousedown %Script;       #IMPLIED  -- a pointer button was pressed down --
+  onmouseup   %Script;       #IMPLIED  -- a pointer button was released --
+  onmouseover %Script;       #IMPLIED  -- a pointer was moved onto --
+  onmousemove %Script;       #IMPLIED  -- a pointer was moved within --
+  onmouseout  %Script;       #IMPLIED  -- a pointer was moved away --
+  onkeypress  %Script;       #IMPLIED  -- a key was pressed and released --
+  onkeydown   %Script;       #IMPLIED  -- a key was pressed down --
+  onkeyup     %Script;       #IMPLIED  -- a key was released --"
+  >
+
+<!-- Reserved Feature Switch -->
+<!ENTITY % HTML.Reserved "IGNORE">
+
+<!-- The following attributes are reserved for possible future use -->
+<![ %HTML.Reserved; [
+<!ENTITY % reserved
+ "datasrc     %URI;          #IMPLIED  -- a single or tabular Data Source --
+  datafld     CDATA          #IMPLIED  -- the property or column name --
+  dataformatas (plaintext|html) plaintext -- text or html --"
+  >
+]]>
+
+<!ENTITY % reserved "">
+
+<!ENTITY % attrs "%coreattrs; %i18n; %events;">
+
+
+<!--=================== Text Markup ======================================-->
+
+<!ENTITY % fontstyle
+ "TT | I | B | BIG | SMALL">
+
+<!ENTITY % phrase "EM | STRONG | DFN | CODE |
+                   SAMP | KBD | VAR | CITE | ABBR | ACRONYM" >
+
+<!ENTITY % special
+   "A | IMG | OBJECT | BR | SCRIPT | MAP | Q | SUB | SUP | SPAN | BDO">
+
+<!ENTITY % formctrl "INPUT | SELECT | TEXTAREA | LABEL | BUTTON">
+
+<!-- %inline; covers inline or "text-level" elements -->
+<!ENTITY % inline "#PCDATA | %fontstyle; | %phrase; | %special; | %formctrl;">
+
+<!ELEMENT (%fontstyle;|%phrase;) - - (%inline;)*>
+<!ATTLIST (%fontstyle;|%phrase;)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!ELEMENT (SUB|SUP) - - (%inline;)*    -- subscript, superscript -->
+<!ATTLIST (SUB|SUP)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!ELEMENT SPAN - - (%inline;)*         -- generic language/style container -->
+<!ATTLIST SPAN
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %reserved;                           -- reserved for possible future use --
+  >
+
+<!ELEMENT BDO - - (%inline;)*          -- I18N BiDi over-ride -->
+<!ATTLIST BDO
+  %coreattrs;                          -- id, class, style, title --
+  lang        %LanguageCode; #IMPLIED  -- language code --
+  dir         (ltr|rtl)      #REQUIRED -- directionality --
+  >
+
+
+<!ELEMENT BR - O EMPTY                 -- forced line break -->
+<!ATTLIST BR
+  %coreattrs;                          -- id, class, style, title --
+  >
+
+<!--================== HTML content models ===============================-->
+
+<!--
+    HTML has two basic content models:
+
+        %inline;     character level elements and text strings
+        %block;      block-like elements e.g. paragraphs and lists
+-->
+
+<!ENTITY % block
+     "P | %heading; | %list; | %preformatted; | DL | DIV | NOSCRIPT |
+      BLOCKQUOTE | FORM | HR | TABLE | FIELDSET | ADDRESS">
+
+<!ENTITY">
+
+<!--=================== Document Body ====================================-->
+
+<!ELEMENT BODY |SCRIPT)+ +(INS|DEL) -- document body -->
+<!ATTLIST BODY
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  onload          %Script;   #IMPLIED  -- the document has been loaded --
+  onunload        %Script;   #IMPLIED  -- the document has been removed --
+  >
+
+<!ELEMENT ADDRESS - - (%inline;)* -- information on author -->
+<!ATTLIST ADDRESS
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!ELEMENT DIV - - (%flow;)*            -- generic language/style container -->
+<!ATTLIST DIV
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %reserved;                           -- reserved for possible future use --
+  >
+
+
+<!--================== The Anchor Element ================================-->
+
+<!ENTITY % Shape "(rect|circle|poly|default)">
+<!ENTITY % Coords "CDATA" -- comma-separated list of lengths -->
+
+<!ELEMENT A - - (%inline;)* -(A)       -- anchor -->
+<!ATTLIST A
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  type        %ContentType;  #IMPLIED  -- advisory content type --
+  name        CDATA          #IMPLIED  -- named link end --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  hreflang    %LanguageCode; #IMPLIED  -- language code --
+  rel         %LinkTypes;    #IMPLIED  -- forward link types --
+  rev         %LinkTypes;    #IMPLIED  -- reverse link types --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  shape       %Shape;        rect      -- for use with client-side image maps --
+  coords      %Coords;       #IMPLIED  -- for use with client-side image maps --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  >
+
+<!--================== Client-side image maps ============================-->
+
+<!-- These can be placed in the same document or grouped in a
+     separate document although this isn't yet widely supported -->
+
+<!ELEMENT MAP - - ((%block;) | AREA)+ -- client-side image map -->
+<!ATTLIST MAP
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #REQUIRED -- for reference by usemap --
+  >
+
+<!ELEMENT AREA - O EMPTY               -- client-side image map area -->
+<!ATTLIST AREA
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  shape       %Shape;        rect      -- controls interpretation of coords --
+  coords      %Coords;       #IMPLIED  -- comma-separated list of lengths --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  nohref      (nohref)       #IMPLIED  -- this region has no action --
+  alt         %Text;         #REQUIRED -- short description --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  >
+
+<!--================== The LINK Element ==================================-->
+
+<!--
+  Relationship values can be used in principle:
+
+   a) for document specific toolbars/menus when used
+      with the LINK element in document head e.g.
+        start, contents, previous, next, index, end, help
+   b) to link to a separate style sheet (rel=stylesheet)
+   c) to make a link to a script (rel=script)
+   d) by stylesheets to control how collections of
+      html nodes are rendered into printed documents
+   e) to make a link to a printable version of this document
+      e.g. a postscript or pdf version (rel=alternate media=print)
+-->
+
+<!ELEMENT LINK - O EMPTY               -- a media-independent link -->
+<!ATTLIST LINK
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  href        %URI;          #IMPLIED  -- URI for linked resource --
+  hreflang    %LanguageCode; #IMPLIED  -- language code --
+  type        %ContentType;  #IMPLIED  -- advisory content type --
+  rel         %LinkTypes;    #IMPLIED  -- forward link types --
+  rev         %LinkTypes;    #IMPLIED  -- reverse link types --
+  media       %MediaDesc;    #IMPLIED  -- for rendering on these media --
+  >
+
+<!--=================== Images ===========================================-->
+
+<!-- Length defined in strict DTD for cellpadding/cellspacing -->
+<!ENTITY % Length "CDATA" -- nn for pixels or nn% for percentage length -->
+<!ENTITY % MultiLength "CDATA" -- pixel, percentage, or relative -->
+
+<![ %HTML.Frameset; [
+<!ENTITY % MultiLengths "CDATA" -- comma-separated list of MultiLength -->
+]]>
+
+<!ENTITY % Pixels "CDATA" -- integer representing length in pixels -->
+
+
+<!-- To avoid problems with text-only UAs as well as
+   to make image content understandable and navigable
+   to users of non-visual UAs, you need to provide
+   a description with ALT, and avoid server-side image maps -->
+<!ELEMENT IMG - O EMPTY                -- Embedded image -->
+<!ATTLIST IMG
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  src         %URI;          #REQUIRED -- URI of image to embed --
+  alt         %Text;         #REQUIRED -- short description --
+  longdesc    %URI;          #IMPLIED  -- link to long description
+                                          (complements alt) --
+  name        CDATA          #IMPLIED  -- name of image for scripting --
+  height      %Length;       #IMPLIED  -- override height --
+  width       %Length;       #IMPLIED  -- override width --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  ismap       (ismap)        #IMPLIED  -- use server-side image map --
+  >
+
+<!-- USEMAP points to a MAP element which may be in this document
+  or an external document, although the latter is not widely supported -->
+
+<!--==================== OBJECT ======================================-->
+<!--
+  OBJECT is used to embed objects as part of HTML pages
+  PARAM elements should precede other content. SGML mixed content
+  model technicality precludes specifying this formally ...
+-->
+
+<!ELEMENT OBJECT - - (PARAM | %flow;)*
+ -- generic embedded object -->
+<!ATTLIST OBJECT
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  declare     (declare)      #IMPLIED  -- declare but don't instantiate flag --
+  classid     %URI;          #IMPLIED  -- identifies an implementation --
+  codebase    %URI;          #IMPLIED  -- base URI for classid, data, archive--
+  data        %URI;          #IMPLIED  -- reference to object's data --
+  type        %ContentType;  #IMPLIED  -- content type for data --
+  codetype    %ContentType;  #IMPLIED  -- content type for code --
+  archive     CDATA          #IMPLIED  -- space-separated list of URIs --
+  standby     %Text;         #IMPLIED  -- message to show while loading --
+  height      %Length;       #IMPLIED  -- override height --
+  width       %Length;       #IMPLIED  -- override width --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  name        CDATA          #IMPLIED  -- submit as part of form --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  %reserved;                           -- reserved for possible future use --
+  >
+
+<!ELEMENT PARAM - O EMPTY              -- named property value -->
+<!ATTLIST PARAM
+  id          ID             #IMPLIED  -- document-wide unique id --
+  name        CDATA          #REQUIRED -- property name --
+  value       CDATA          #IMPLIED  -- property value --
+  valuetype   (DATA|REF|OBJECT) DATA   -- How to interpret value --
+  type        %ContentType;  #IMPLIED  -- content type for value
+                                          when valuetype=ref --
+  >
+
+
+<!--=================== Horizontal Rule ==================================-->
+
+<!ELEMENT HR - O EMPTY -- horizontal rule -->
+<!ATTLIST HR
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!--=================== Paragraphs =======================================-->
+
+<!ELEMENT P - O (%inline;)*            -- paragraph -->
+<!ATTLIST P
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!--=================== Headings =========================================-->
+
+<!--
+  There are six levels of headings from H1 (the most important)
+  to H6 (the least important).
+-->
+
+<!ELEMENT (%heading;)  - - (%inline;)* -- heading -->
+<!ATTLIST (%heading;)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!--=================== Preformatted Text ================================-->
+
+<!-- excludes markup for images and changes in font size -->
+<!ENTITY % pre.exclusion "IMG|OBJECT|BIG|SMALL|SUB|SUP">
+
+<!ELEMENT PRE - - (%inline;)* -(%pre.exclusion;) -- preformatted text -->
+<!ATTLIST PRE
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!--===================== Inline Quotes ==================================-->
+
+<!ELEMENT Q - - (%inline;)*            -- short inline quotation -->
+<!ATTLIST Q
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  cite        %URI;          #IMPLIED  -- URI for source document or msg --
+  >
+
+<!--=================== Block-like Quotes ================================-->
+
+<!ELEMENT BLOCKQUOTE - - (%block;|SCRIPT)+ -- long quotation -->
+<!ATTLIST BLOCKQUOTE
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  cite        %URI;          #IMPLIED  -- URI for source document or msg --
+  >
+
+<!--=================== Inserted/Deleted Text ============================-->
+
+
+<!-- INS/DEL are handled by inclusion on BODY -->
+<!ELEMENT (INS|DEL) - - (%flow;)*      -- inserted text, deleted text -->
+<!ATTLIST (INS|DEL)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  cite        %URI;          #IMPLIED  -- info on reason for change --
+  datetime    %Datetime;     #IMPLIED  -- date and time of change --
+  >
+
+<!--=================== Lists ============================================-->
+
+<!-- definition lists - DT for term, DD for its definition -->
+
+<!ELEMENT DL - - (DT|DD)+              -- definition list -->
+<!ATTLIST DL
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!ELEMENT DT - O (%inline;)*           -- definition term -->
+<!ELEMENT DD - O (%flow;)*             -- definition description -->
+<!ATTLIST (DT|DD)
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+
+<!ELEMENT OL - - (LI)+                 -- ordered list -->
+<!ATTLIST OL
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!-- Unordered Lists (UL) bullet styles -->
+<!ELEMENT UL - - (LI)+                 -- unordered list -->
+<!ATTLIST UL
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+
+
+<!ELEMENT LI - O (%flow;)*             -- list item -->
+<!ATTLIST LI
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!--================ Forms ===============================================-->
+<!ELEMENT FORM - - (%block;|SCRIPT)+ -(FORM) -- interactive form -->
+<!ATTLIST FORM
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  action      %URI;          #REQUIRED -- server-side form handler --
+  method      (GET|POST)     GET       -- HTTP method used to submit the form--
+  enctype     %ContentType;  "application/x-www-form-urlencoded"
+  accept      %ContentTypes; #IMPLIED  -- list of MIME types for file upload --
+  name        CDATA          #IMPLIED  -- name of form for scripting --
+  onsubmit    %Script;       #IMPLIED  -- the form was submitted --
+  onreset     %Script;       #IMPLIED  -- the form was reset --
+  accept-charset %Charsets;  #IMPLIED  -- list of supported charsets --
+  >
+
+<!-- Each label must not contain more than ONE field -->
+<!ELEMENT LABEL - - (%inline;)* -(LABEL) -- form field label text -->
+<!ATTLIST LABEL
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  for         IDREF          #IMPLIED  -- matches field ID value --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  >
+
+<!ENTITY % InputType
+  "(TEXT | PASSWORD | CHECKBOX |
+    RADIO | SUBMIT | RESET |
+    FILE | HIDDEN | IMAGE | BUTTON)"
+   >
+
+<!-- attribute name required for all but submit and reset -->
+<!ELEMENT INPUT - O EMPTY              -- form control -->
+<!ATTLIST INPUT
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  type        %InputType;    TEXT      -- what kind of widget is needed --
+  name        CDATA          #IMPLIED  -- submit as part of form --
+  value       CDATA          #IMPLIED  -- Specify for radio buttons and checkboxes --
+  checked     (checked)      #IMPLIED  -- for radio buttons and check boxes --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  readonly    (readonly)     #IMPLIED  -- for text and passwd --
+  size        CDATA          #IMPLIED  -- specific to each type of field --
+  maxlength   NUMBER         #IMPLIED  -- max chars for text fields --
+  src         %URI;          #IMPLIED  -- for fields with images --
+  alt         CDATA          #IMPLIED  -- short description --
+  usemap      %URI;          #IMPLIED  -- use client-side image map --
+  ismap       (ismap)        #IMPLIED  -- use server-side image map --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  onselect    %Script;       #IMPLIED  -- some text was selected --
+  onchange    %Script;       #IMPLIED  -- the element value was changed --
+  accept      %ContentTypes; #IMPLIED  -- list of MIME types for file upload --
+  %reserved;                           -- reserved for possible future use --
+  >
+
+<!ELEMENT SELECT - - (OPTGROUP|OPTION)+ -- option selector -->
+<!ATTLIST SELECT
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #IMPLIED  -- field name --
+  size        NUMBER         #IMPLIED  -- rows visible --
+  multiple    (multiple)     #IMPLIED  -- default is single selection --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  onchange    %Script;       #IMPLIED  -- the element value was changed --
+  %reserved;                           -- reserved for possible future use --
+  >
+
+<!ELEMENT OPTGROUP - - (OPTION)+ -- option group -->
+<!ATTLIST OPTGROUP
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  label       %Text;         #REQUIRED -- for use in hierarchical menus --
+  >
+
+<!ELEMENT OPTION - O (#PCDATA)         -- selectable choice -->
+<!ATTLIST OPTION
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  selected    (selected)     #IMPLIED
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  label       %Text;         #IMPLIED  -- for use in hierarchical menus --
+  value       CDATA          #IMPLIED  -- defaults to element content --
+  >
+
+<!ELEMENT TEXTAREA - - (#PCDATA)       -- multi-line text field -->
+<!ATTLIST TEXTAREA
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #IMPLIED
+  rows        NUMBER         #REQUIRED
+  cols        NUMBER         #REQUIRED
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  readonly    (readonly)     #IMPLIED
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  onselect    %Script;       #IMPLIED  -- some text was selected --
+  onchange    %Script;       #IMPLIED  -- the element value was changed --
+  %reserved;                           -- reserved for possible future use --
+  >
+
+<!--
+  #PCDATA is to solve the mixed content problem,
+  per specification only whitespace is allowed there!
+ -->
+<!ELEMENT FIELDSET - - (#PCDATA,LEGEND,(%flow;)*) -- form control group -->
+<!ATTLIST FIELDSET
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!ELEMENT LEGEND - - (%inline;)*       -- fieldset legend -->
+
+<!ATTLIST LEGEND
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  >
+
+<!ELEMENT BUTTON - -
+     (%flow;)* -(A|%formctrl;|FORM|FIELDSET)
+     -- push button -->
+<!ATTLIST BUTTON
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  name        CDATA          #IMPLIED
+  value       CDATA          #IMPLIED  -- sent to server when submitted --
+  type        (button|submit|reset) submit -- for use as form button --
+  disabled    (disabled)     #IMPLIED  -- unavailable in this context --
+  tabindex    NUMBER         #IMPLIED  -- position in tabbing order --
+  accesskey   %Character;    #IMPLIED  -- accessibility key character --
+  onfocus     %Script;       #IMPLIED  -- the element got the focus --
+  onblur      %Script;       #IMPLIED  -- the element lost the focus --
+  %reserved;                           -- reserved for possible future use --
+  >
+
+<!--======================= Tables =======================================-->
+
+<!-- IETF HTML table standard, see [RFC1942] -->
+
+<!--
+ The BORDER attribute sets the thickness of the frame around the
+ table. The default units are screen pixels.
+
+ The FRAME attribute specifies which parts of the frame around
+ the table should be rendered. The values are not the same as
+ CALS to avoid a name clash with the VALIGN attribute.
+
+ The value "border" is included for backwards compatibility with
+ <TABLE BORDER> which yields frame=border and border=implied
+ For <TABLE BORDER=1> you get border=1 and frame=implied. In this
+ case, it is appropriate to treat this as frame=border for backwards
+ compatibility with deployed browsers.
+-->
+<!ENTITY % TFrame "(void|above|below|hsides|lhs|rhs|vsides|box|border)">
+
+<!--
+ The RULES attribute defines which rules to draw between cells:
+
+ If RULES is absent then assume:
+     "none" if BORDER is absent or BORDER=0 otherwise "all"
+-->
+
+<!ENTITY % TRules "(none | groups | rows | cols | all)">
+
+<!-- horizontal placement of table relative to document -->
+<!ENTITY % TAlign "(left|center|right)">
+
+<!-- horizontal alignment attributes for cell contents -->
+<!ENTITY % cellhalign
+  "align      (left|center|right|justify|char) #IMPLIED
+   char       %Character;    #IMPLIED  -- alignment char, e.g. char=':' --
+   charoff    %Length;       #IMPLIED  -- offset for alignment char --"
+  >
+
+<!-- vertical alignment attributes for cell contents -->
+<!ENTITY % cellvalign
+  "valign     (top|middle|bottom|baseline) #IMPLIED"
+  >
+
+<!ELEMENT TABLE - -
+     (CAPTION?, (COL*|COLGROUP*), THEAD?, TFOOT?, TBODY+)>
+<!ELEMENT CAPTION  - - (%inline;)*     -- table caption -->
+<!ELEMENT THEAD    - O (TR)+           -- table header -->
+<!ELEMENT TFOOT    - O (TR)+           -- table footer -->
+<!ELEMENT TBODY    O O (TR)+           -- table body -->
+<!ELEMENT COLGROUP - O (COL)*          -- table column group -->
+<!ELEMENT COL      - O EMPTY           -- table column -->
+<!ELEMENT TR       - O (TH|TD)+        -- table row -->
+<!ELEMENT (TH|TD)  - O (%flow;)*       -- table header cell, table data cell-->
+
+<!ATTLIST TABLE                        -- table element --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  summary     %Text;         #IMPLIED  -- purpose/structure for speech output--
+  width       %Length;       #IMPLIED  -- table width --
+  border      %Pixels;       #IMPLIED  -- controls frame width around table --
+  frame       %TFrame;       #IMPLIED  -- which parts of frame to render --
+  rules       %TRules;       #IMPLIED  -- rulings between rows and cols --
+  cellspacing %Length;       #IMPLIED  -- spacing between cells --
+  cellpadding %Length;       #IMPLIED  -- spacing within cells --
+  %reserved;                           -- reserved for possible future use --
+  datapagesize CDATA         #IMPLIED  -- reserved for possible future use --
+  >
+
+
+<!ATTLIST CAPTION
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  >
+
+<!--
+COLGROUP groups a set of COL elements. It allows you to group
+several semantically related columns together.
+-->
+<!ATTLIST COLGROUP
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  span        NUMBER         1         -- default number of columns in group --
+  width       %MultiLength;  #IMPLIED  -- default width for enclosed COLs --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  >
+
+<!--
+ COL elements define the alignment properties for cells in
+ one or more columns.
+
+ The WIDTH attribute specifies the width of the columns, e.g.
+
+     width=64        width in screen pixels
+     width=0.5*      relative width of 0.5
+
+ The SPAN attribute causes the attributes of one
+ COL element to apply to more than one column.
+-->
+<!ATTLIST COL                          -- column groups and properties --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  span        NUMBER         1         -- COL attributes affect N columns --
+  width       %MultiLength;  #IMPLIED  -- column width specification --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  >
+
+<!--
+    Use THEAD to duplicate headers when breaking table
+    across page boundaries, or for static headers when
+    TBODY sections are rendered in scrolling panel.
+
+    Use TFOOT to duplicate footers when breaking table
+    across page boundaries, or for static footers when
+    TBODY sections are rendered in scrolling panel.
+
+    Use multiple TBODY sections when rules are needed
+    between groups of table rows.
+-->
+<!ATTLIST (THEAD|TBODY|TFOOT)          -- table section --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  >
+
+<!ATTLIST TR                           -- table row --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  >
+
+
+<!-- Scope is simpler than headers attribute for common tables -->
+<!ENTITY % Scope "(row|col|rowgroup|colgroup)">
+
+<!-- TH is for headers, TD for data, but for cells acting as both use TD -->
+<!ATTLIST (TH|TD)                      -- header or data cell --
+  %attrs;                              -- %coreattrs, %i18n, %events --
+  abbr        %Text;         #IMPLIED  -- abbreviation for header cell --
+  axis        CDATA          #IMPLIED  -- comma-separated list of related headers--
+  headers     IDREFS         #IMPLIED  -- list of id's for header cells --
+  scope       %Scope;        #IMPLIED  -- scope covered by header cells --
+  rowspan     NUMBER         1         -- number of rows spanned by cell --
+  colspan     NUMBER         1         -- number of cols spanned by cell --
+  %cellhalign;                         -- horizontal alignment in cells --
+  %cellvalign;                         -- vertical alignment in cells --
+  >
+
+
+<!--================ Document Head =======================================-->
+<!-- %head.misc; defined earlier on as "SCRIPT|STYLE|META|LINK|OBJECT" -->
+<!ENTITY % head.content "TITLE & BASE?">
+
+<!ELEMENT HEAD O O (%head.content;) +(%head.misc;) -- document head -->
+<!ATTLIST HEAD
+  %i18n;                               -- lang, dir --
+  profile     %URI;          #IMPLIED  -- named dictionary of meta info --
+  >
+
+<!-- The TITLE element is not considered part of the flow of text.
+       It should be displayed, for example as the page header or
+       window title. Exactly one title is required per document.
+    -->
+<!ELEMENT TITLE - - (#PCDATA) -(%head.misc;) -- document title -->
+<!ATTLIST TITLE %i18n>
+
+
+<!ELEMENT BASE - O EMPTY               -- document base URI -->
+<!ATTLIST BASE
+  href        %URI;          #REQUIRED -- URI that acts as base URI --
+  >
+
+<!ELEMENT META - O EMPTY               -- generic metainformation -->
+<!ATTLIST META
+  %i18n;                               -- lang, dir, for use with content --
+  http-equiv  NAME           #IMPLIED  -- HTTP response header name  --
+  name        NAME           #IMPLIED  -- metainformation name --
+  content     CDATA          #REQUIRED -- associated information --
+  scheme      CDATA          #IMPLIED  -- select form of content --
+  >
+
+<!ELEMENT STYLE - - %StyleSheet        -- style info -->
+<!ATTLIST STYLE
+  %i18n;                               -- lang, dir, for use with title --
+  type        %ContentType;  #REQUIRED -- content type of style language --
+  media       %MediaDesc;    #IMPLIED  -- designed for use with these media --
+  title       %Text;         #IMPLIED  -- advisory title --
+  >
+
+<!ELEMENT SCRIPT - - %Script;          -- script statements -->
+<!ATTLIST SCRIPT
+  charset     %Charset;      #IMPLIED  -- char encoding of linked resource --
+  type        %ContentType;  #REQUIRED -- content type of script language --
+  src         %URI;          #IMPLIED  -- URI for an external script --
+  defer       (defer)        #IMPLIED  -- UA may defer execution of script --
+  event       CDATA          #IMPLIED  -- reserved for possible future use --
+  for         %URI;          #IMPLIED  -- reserved for possible future use --
+  >
+
+<!ELEMENT content container for non script-based rendering -->
+<!ATTLIST!--================ Document Structure ==================================-->
+<!ENTITY % html.content "HEAD, BODY">
+
+<!ELEMENT HTML O O (%html.content;)    -- document root element -->
+<!ATTLIST HTML
+  %i18n;                               -- lang, dir --
+  >~ $ curl -v www.w3.org/1998/silverdollar57
+* Host www.w3.org:80 was resolved.
+* IPv6: 2606:4700::6812:1713, 2606:4700::6812:1613
+* IPv4: 104.18.23.19, 104.18.22.19
+*   Trying [2606:4700::6812:1713]:80...
+* Established connection to www.w3.org (2606:4700::6812:1713 port 80) from 2600:100b:b11d:4502:0:11:ebac:c101 port 49330
+* using HTTP/1.x
+> GET /1998/silverdollar57 HTTP/1.1
+> Host: www.w3.org
+> User-Agent: curl/8.21.0
+> Accept: */*
+>
+* Request completely sent off
+< HTTP/1.1 301 Moved Permanently
+< Date: Mon, 10 Aug 2026 13:54:45 GMT
+< Content-Type: text/html; charset=UTF-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Location: https://www.w3.org/1998/silverdollar57
+< set-cookie: __cf_bm=XMg9Y1X62X73daGNva_VMVf7Wo86lLeqe8T4EJm0GFw-1786370085.3274987-1.0.1.1-WPRLKpIWo_M24bCoMA_zS5r3NChx09WLDErUjZfpmiQXoe59oV2lzcNxQQMpiM55u58skoIeYF6M1BbqUwDM7adxe_aPCC.McORwyORPXde.qB.1yhqau0pa_8pOs5Od; HttpOnly; Path=/; Domain=w3.org; Expires=Mon, 10 Aug 2026 14:24:45 GMT
+< X-Content-Type-Options: nosniff
+< Server: cloudflare
+< CF-RAY: a28f7e894dbf98d5-ATL
+< alt-svc: h3=":443"; ma=86400
+<
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+* Connection #0 to host www.w3.org:80 left intact
+~ $ curl -iv http://www.w3.org/1998/silverdollar57
+*   Trying [2606:4700::6812:1713]:80...
+* Host www.w3.org:80 was resolved.
+* IPv6: 2606:4700::6812:1713, 2606:4700::6812:1613
+* IPv4: 104.18.23.19, 104.18.22.19
+*   Trying 104.18.23.19:80...
+* Established connection to www.w3.org (2606:4700::6812:1713 port 80) from 2600:100b:b11d:4502:0:11:ebac:c101 port 52210
+* using HTTP/1.x
+> GET /1998/silverdollar57 HTTP/1.1
+> Host: www.w3.org
+> User-Agent: curl/8.21.0
+> Accept: */*
+>
+* Request completely sent off
+< HTTP/1.1 301 Moved Permanently
+HTTP/1.1 301 Moved Permanently
+< Date: Mon, 10 Aug 2026 13:55:01 GMT
+Date: Mon, 10 Aug 2026 13:55:01 GMT
+< Content-Type: text/html; charset=UTF-8
+Content-Type: text/html; charset=UTF-8
+< Transfer-Encoding: chunked
+Transfer-Encoding: chunked
+< Connection: keep-alive
+Connection: keep-alive
+< Location: https://www.w3.org/1998/silverdollar57
+Location: https://www.w3.org/1998/silverdollar57
+< set-cookie: __cf_bm=Y.kTQUV8jQ_zCufyAyASlY6RaSeF6q_jZkVcQ.aLI_w-1786370100.9948862-1.0.1.1-lwR87xEaE7nm_m674ks0SKhEq1y5J4Om.Urj5NIKZm6zNfDOflDbHiUgQhtMh10c5ao0hknihjItWkRfSrmFtqHg4hyhejBcNrmKXG5_y4fX6sa5.uESaZYEp8Il67Z7; HttpOnly; Path=/; Domain=w3.org; Expires=Mon, 10 Aug 2026 14:25:00 GMT
+set-cookie: __cf_bm=Y.kTQUV8jQ_zCufyAyASlY6RaSeF6q_jZkVcQ.aLI_w-1786370100.9948862-1.0.1.1-lwR87xEaE7nm_m674ks0SKhEq1y5J4Om.Urj5NIKZm6zNfDOflDbHiUgQhtMh10c5ao0hknihjItWkRfSrmFtqHg4hyhejBcNrmKXG5_y4fX6sa5.uESaZYEp8Il67Z7; HttpOnly; Path=/; Domain=w3.org; Expires=Mon, 10 Aug 2026 14:25:00 GMT
+< X-Content-Type-Options: nosniff
+X-Content-Type-Options: nosniff
+< Server: cloudflare
+Server: cloudflare
+< CF-RAY: a28f7eeb3f22fc73-ATL
+CF-RAY: a28f7eeb3f22fc73-ATL
+< alt-svc: h3=":443"; ma=86400
+alt-svc: h3=":443"; ma=86400
+<
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+* Connection #0 to host www.w3.org:80 left intact
+~ $ curl -i https://www.w3.org/1998/silverdollar57
+HTTP/2 404
+date: Mon, 10 Aug 2026 13:55:27 GMT
+content-type: text/html; charset=utf-8
+last-modified: Tue, 09 Jun 2026 01:31:02 GMT
+accept-ranges: bytes
+vary: accept-encoding
+cache-control: public, s-maxage=2592001
+x-backend: www-mirrors
+x-request-id: a27eeb5aef4c83ef
+strict-transport-security: max-age=15552000; includeSubdomains; preload
+content-security-policy: frame-ancestors 'self' https://cms.w3.org/ https://cms-dev.w3.org/; upgrade-insecure-requests
+x-content-type-options: nosniff
+set-cookie: __cf_bm=G5bd0UGBIUsd2OK09qJmgdlbwxKUE3hxEXNegcVvtHU-1786370127.552698-1.0.1.1-BJVLk7Yq8IJcQTVZcJEthb8DdVuHvN87nKGG5bN.N_7eRXKQZcAWFtcE1gozIiler00c5rx9M4asH9nJXK0pHD9vnvoSwvWU6WXX3B5nd7Cl7cGAY66CwTl3BUkt.6N0; HttpOnly; SameSite=None; Secure; Path=/; Domain=w3.org; Expires=Mon, 10 Aug 2026 14:25:27 GMT
+age: 173842
+cf-cache-status: HIT
+server: cloudflare
+cf-ray: a28f7f9138910779-ATL
+alt-svc: h3=":443"; ma=86400
+
+<!doctype html>
+<html dir="ltr" lang="en" class="no-js">
+<head>
+    <title>Page Not Found | W3C</title>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="home" href="https://www.w3.org/"/>
+<link rel="icon" type="image/png" href="https://www.w3.org/assets/logos/w3c-2025/favicons/favicon-32.png"/>
+<link rel="apple-touch-icon" type="image/png" href="https://www.w3.org/assets/logos/w3c-2025/favicons/favicon-180.png"/>
+
+<link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/core.css?ver=1.5" media="screen"/>
+
+<!--
+CSS Mustard Cut
+Print (Edge doesn't apply to print otherwise)
+Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
+FF 47+
+-->
+<link rel="stylesheet" id="advanced-stylesheet"
+      href="https://www.w3.org/assets/website-2021/styles/advanced.css?ver=1.5" media="
+            only print,
+            only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+            only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
+        ">
+<link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/print.css" media="print"/>
+
+<script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
+
+<script>
+    var myFont = new FontFaceObserver('Noto Sans');
+
+    Promise.all([myFont.load()]).then(function () {
+        document.documentElement.className += " fonts-loaded";
+    });
+
+    (function () {
+        var linkEl = document.getElementById('advanced-stylesheet');
+        if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+            var script = document.createElement('script');
+            script.src = 'https://www.w3.org/assets/website-2021/js/main.js?ver=1.4';
+            script.defer = true;
+            document.querySelector('head').appendChild(script);
+            (function (H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement);
+        }
+    })();
+</script>
+
+
+    <meta name="description" content="The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards."/>
+    <meta name="thumbnail" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="W3C"/>
+    <meta property="og:image" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:description" content="The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards."/>
+    <meta property="og:site_name" content="W3C"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="w3c"/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:title" content="W3C"/>
+    <meta name="twitter:description" content="The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards."/>
+    <meta name="twitter:image" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+
+
+
+    </head>
+
+<body class="default">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grid-wrap">
+    <div class="wrap">
+        <header class="global-header">
+            <span role="status" aria-live="polite"></span>
+                                             
+                            <nav id="lang-nav" aria-label="Language options">
+        <div class="l-center">
+            <div class="l-cluster">
+                <ul class="clean-list" role="list">
+                        <li><a href="https://www.w3.org/ja/" hreflang="ja" lang="ja">日本 語ホームページ<span class="visuallyhidden" lang="en">Japanese website</span></a></li>
+                        <li><a href="https://www.w3.org/zh-hans/" hreflang="zh-hans" lang="zh-hans">简体中文首页<span class="visuallyhidden" lang="en">Chinese website</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+            <nav id="global-nav" aria-label="Main">
+    <div class="global-nav__inner l-center">
+        <a class="logo-link" href="https://www.w3.org/" hreflang="en">
+            <span class="logo">
+                <img src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c.svg" alt="W3C" role="img"/>
+            </span>
+            <span class="visuallyhidden">Visit the W3C homepage</span>
+        </a>
+        <button type="button" class="button button--ghost with-icon--after with-icon--larger" data-trigger="mobile-nav"
+                style="display: none;"></button>
+        <ul data-component="nav-double-intro">
+                <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/standards/" class="nav-link">Standards &amp; groups</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Standards &amp; groups</h2>
+                                <div class="nav__submenu__intro__text">
+                                        <p>Understand the various specifications, their maturity levels on the web standards track, their adoption, and the groups that develop them.</p>
+                                        <a href="https://www.w3.org/standards/">Explore web standards</a>
+                                </div>
+                            </div>
+                            <ul>
+                                        <li><a href="https://www.w3.org/standards/about/">About W3C web standards</a></li>
+                                        <li><a href="https://www.w3.org/TR/">W3C standards &amp; drafts</a></li>
+                                        <li><a href="https://www.w3.org/standards/types/">Types of documents W3C publishes</a></li>
+                                        <li><a href="https://www.w3.org/groups/">W3C groups</a></li>
+                                        <li><a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a></li>
+                                        <li><a href="https://www.w3.org/standards/review/">Reviews &amp; public feedback</a></li>
+                                        <li><a href="https://www.w3.org/get-involved/promote/">Promote web standards</a></li>
+                                        <li><a href="https://www.w3.org/liaisons/">Liaisons</a></li>
+                                        <li><a href="https://www.w3.org/groups/other/tag/">Technical Architecture Group (TAG)</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/get-involved/" class="nav-link">Get involved</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Get involved</h2>
+                                <div class="nav__submenu__intro__text">
+                                        <p>W3C works at the nexus of core technology, industry needs, and societal needs.</p>
+                                        <a href="https://www.w3.org/get-involved/">Find ways to get involved</a>
+                                </div>
+                            </div>
+                            <ul>
+                                        <li><a href="https://www.w3.org/ecosystems/">Browse our work by industry</a></li>
+                                        <li><a href="https://www.w3.org/membership/">Become a Member</a></li>
+                                        <li><a href="https://www.w3.org/Member/">Member home (restricted)</a></li>
+                                        <li><a href="https://www.w3.org/support-us/">Support us</a></li>
+                                        <li><a href="https://www.w3.org/email/">Mailing lists</a></li>
+                                        <li><a href="https://www.w3.org/guide/">Participant guidebook</a></li>
+                                        <li><a href="https://www.w3.org/about/positive-work-environment/">Positive work environment</a></li>
+                                        <li><a href="https://www.w3.org/invited-experts/">Invited Experts</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/resources/" class="nav-link">Resources</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Resources</h2>
+                                <div class="nav__submenu__intro__text">
+                                        <p>Master web fundamentals, use our developer tools, or contribute code.</p>
+                                        <a href="https://www.w3.org/resources/">Learn from W3C resources</a>
+                                </div>
+                            </div>
+                            <ul>
+                                        <li><a href="https://www.w3.org/developers/">Developers</a></li>
+                                        <li><a href="https://www.w3.org/developers/tools/">Validators &amp; tools</a></li>
+                                        <li><a href="https://www.w3.org/WAI/fundamentals/">Accessibility fundamentals</a></li>
+                                        <li><a href="https://www.w3.org/International/i18n-drafts/nav/about">Internationalization (i18n)</a></li>
+                                        <li><a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a></li>
+                                        <li><a href="https://www.w3.org/policies/code-of-conduct/">Code of conduct</a></li>
+                                        <li><a href="https://www.w3.org/reports/">Reports</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/news-events/" class="nav-link">News &amp; events</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">News &amp; events</h2>
+                                <div class="nav__submenu__intro__text">
+                                        <p>Recent content across news, blogs, press releases, media; upcoming events.</p>
+                                        <a href="https://www.w3.org/news-events/">Explore news &amp; events</a>
+                                </div>
+                            </div>
+                            <ul>
+                                        <li><a href="https://www.w3.org/news/">News</a></li>
+                                        <li><a href="https://www.w3.org/blog/">Blog</a></li>
+                                        <li class="break-after"><a href="https://www.w3.org/press-releases/">Press releases</a></li>
+                                        <li><a href="https://www.w3.org/about/press-media/">Press &amp; media</a></li>
+                                        <li><a href="https://www.w3.org/events/">Events</a></li>
+                                        <li><a href="https://www.w3.org/news-events/tpac/">Annual W3C Conference (TPAC)</a></li>
+                                        <li><a href="https://www.w3.org/policies/code-of-conduct/">Code of conduct</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/support-us/" class="nav-link">Support us</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Support us</h2>
+                                <div class="nav__submenu__intro__text">
+                                        <p>Make a huge difference to our operations as a public-interest non-profit, and help us to achieve our vision.</p>
+                                        <a href=""></a>
+                                </div>
+                            </div>
+                            <ul>
+                                        <li><a href="https://www.w3.org/support-us/">Ways you can support us</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/about/" class="nav-link">About</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">About</h2>
+                                <div class="nav__submenu__intro__text">
+                                        <p>Understand our values and principles, learn our history, look into our policies, meet our people.</p>
+                                        <a href="https://www.w3.org/about/">Find out more about us</a>
+                                </div>
+                            </div>
+                            <ul>
+                                        <li><a href="https://www.w3.org/mission/">Our mission</a></li>
+                                        <li><a href="https://www.w3.org/support-us/">Support us</a></li>
+                                        <li><a href="https://www.w3.org/about/leadership/">Leadership</a></li>
+                                        <li><a href="https://www.w3.org/staff/">Staff</a></li>
+                                        <li class="break-after"><a href="https://www.w3.org/careers/">Careers</a></li>
+                                        <li><a href="https://www.w3.org/about/press-media/">Media kit</a></li>
+                                        <li><a href="https://www.w3.org/about/diversity/">Diversity</a></li>
+                                        <li><a href="https://www.w3.org/about/corporation/">Corporation</a></li>
+                                        <li><a href="https://www.w3.org/policies/">Policies &amp; legal information</a></li>
+                                        <li><a href="https://www.w3.org/contact/">Contact us</a></li>
+                                        <li><a href="https://www.w3.org/help/">Help</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </li>
+            <li class="top-nav-item">
+                                                                                    <a hreflang="en" href="https://www.w3.org/help/search/" class="nav-link icon-link">
+                    <img class="icon" src="https://www.w3.org/assets/website-2021/svg/search.svg" width="24" height="24" alt aria-hidden="true"><span class="hide-at-max-width">Search</span>
+                </a>
+            </li>
+            <li class="top-nav-item">
+                <a hreflang="en" href="https://www.w3.org/users/myprofile/" id="account-login-link" class="account-login icon-link with-icon--after">
+                    My account
+                    <span class="avatar avatar--small icon"><img src="https://www.w3.org/assets/website-2021/svg/avatar.svg" width="24" height="24" alt aria-hidden="true"/></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+        </header>
+
+<nav id="breadcrumb" aria-label="Breadcrumb">
+    <div class="l-center">
+        <div class="l-cluster">
+            <ol class="breadcrumbs clean-list" role="list">
+                            </ol>
+        </div>
+    </div>
+</nav>
+                <main id="main" >
+
+
+
+
+
+
+
+
+                            <h1>Page Not Found</h1>
+        <div class="component component--text" id="message">
+                <p>The server returned a "404 - Not Found" error.</p>
+        </div>
+
+        <section                class="component component--fifty-fifty reversed">
+        <div class="illustration">
+                                            <img src="https://www.w3.org/assets/website-2021/svg/404.svg"
+                                         loading="lazy"
+                                            alt=""
+                                            />
+                                            </div>
+        <div class="component--fifty-fifty__text">
+                                            <p>Sorry, the page you were trying to reach does not exist. Here are some steps you may try to find the page you were looking for:</p> <ul> <li>If you typed the URL by hand then please make sure that it is exactly as it should be.</li> <li>If you are looking for information on a particular subject, please start on the <a href="https://www.w3.org/">W3C home page</a>.</li> <li>Try searching the site using the search icon at the top of this page.</li> </ul>
+                                            </div>
+</section>
+
+        <div class="component component--text">
+                <p>If you still have a question, please consult our <a href="https://www.w3.org/help/">Help page</a>.</p>
+        </div>
+                    </main>
+                                </div>
+            <footer class="global-footer">
+    <div class="l-center">
+        <div class="global-footer__links">
+            <div class="l-cluster">
+                <ul class="clean-list" role="list">
+                        <li><a href="https://www.w3.org/" hreflang="en"><span lang="en" dir="ltr">Home</span></a></li>
+                        <li><a href="https://www.w3.org/contact/" hreflang="en"><span lang="en" dir="ltr">Contact</span></a></li>
+                        <li><a href="https://www.w3.org/help/" hreflang="en"><span lang="en" dir="ltr">Help</span></a></li>
+                        <li><a href="https://www.w3.org/support-us/" hreflang="en"><span lang="en" dir="ltr">Support us</span></a></li>
+                        <li><a href="https://www.w3.org/policies/" hreflang="en"><span lang="en" dir="ltr">Legal &amp; Policies</span></a></li>
+                        <li><a href="https://www.w3.org/about/corporation/" hreflang="en"><span lang="en" dir="ltr">Corporation</span></a></li>
+                        <li><a href="https://status.w3.org/" hreflang="en"><span lang="en" dir="ltr">System Status</span></a></li>
+                </ul>
+            </div>
+            <ul class="clean-list" role="list">
+                <li>
+                    <a class="with-icon--larger" href="https://w3c.social/@w3c" hreflang="en">
+                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/mastodon.svg" width="20" height="20" alt aria-hidden="true" loading="lazy"/>
+                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on Mastodon</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="with-icon--larger" href="https://github.com/w3c/" hreflang="en">
+                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/github.svg" width="20" height="20" alt aria-hidden="true" loading="lazy"/>
+                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on GitHub</span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright"><span lang="en" dir="ltr">Copyright &copy; 1998 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br> <abbr title="World Wide Web Consortium">W3C</abbr><sup>&reg;</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> and <a rel="license" href="https://www.w3.org/copyright/document-license/" title="W3C Document License">permissive license</a> rules apply.</span></p>          </div>
+</footer>                                        </div>
+                                                 <script src="/assets/website-2021/js/translations-sorting.js"></script>               </body>
+
+</html>
