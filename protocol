@@ -1,0 +1,43 @@
+import { ScrollView, Text, View } from "react-native";
+
+import { ScreenContainer } from "@/components/screen-container";
+import { sovereignRecord, verificationCopy } from "@/constants/sovereign-data";
+
+const protocolRows = [
+  ["Active authority", sovereignRecord.activeAuthority],
+  ["Lifecycle state", sovereignRecord.lifecycle],
+  ["Node status", sovereignRecord.nodeStatus],
+  ["Source status", "Loaded from supplied artifacts"],
+] as const;
+
+export default function ProtocolScreen() {
+  return (
+    <ScreenContainer className="px-5 pb-6">
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 32 }}>
+        <Text className="pt-5 text-xs font-bold tracking-[3px] text-primary">PROTOCOL</Text>
+        <Text className="mt-2 text-3xl font-bold text-foreground">Dynamic authority</Text>
+        <Text className="mt-2 text-base leading-6 text-muted">A read-only interpretation of the protocol declaration supplied with this vault.</Text>
+
+        <View className="mt-7 rounded-[26px] bg-foreground p-5">
+          <Text className="text-xs font-bold tracking-[2px] text-primary">SOVEREIGN PROTOCOL</Text>
+          <Text className="mt-5 text-2xl font-semibold text-background">{sovereignRecord.lifecycle}</Text>
+          <Text className="mt-2 text-sm leading-5 text-background/60">The declaration describes an extensible lifecycle with a currently active authority.</Text>
+        </View>
+
+        <View className="mt-6 overflow-hidden rounded-2xl border border-border bg-surface">
+          {protocolRows.map(([label, value], index) => (
+            <View key={label} className={index < protocolRows.length - 1 ? "border-b border-border p-4" : "p-4"}>
+              <Text className="text-xs uppercase tracking-wider text-muted">{label}</Text>
+              <Text className="mt-1 text-base font-semibold text-foreground">{value}</Text>
+            </View>
+          ))}
+        </View>
+
+        <View className="mt-6 rounded-2xl bg-warning/15 p-4">
+          <Text className="text-sm font-semibold text-foreground">Read-only interpretation</Text>
+          <Text className="mt-1 text-sm leading-5 text-muted">{verificationCopy}</Text>
+        </View>
+      </ScrollView>
+    </ScreenContainer>
+  );
+}
