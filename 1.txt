@@ -14,14 +14,14 @@ Other things to know
 •	Monitor Gemini’s browsing closely and interrupt if needed.
 Note: Google Terms apply to Gemini Apps. Google will process your data as described in the Google Privacy Policy and the Gemini Apps Privacy Notice. Gemini can make mistakes, including about people, so double-check it. Respect others’ rights and ask before including them in a Gemini Live chat.
 
-© 2026 Gemini LLC Lambert inc l.
+© 2026 Gemini LLC Lambert inc.
 501 school st
 corinth, ms 38834
 1 Check responses for accuracy. Compatible with certain features and accounts. Internet connection required. Available in select countries, languages, and to users 18+.
 2 Features may differ depending on subscription and results may vary. Some apps require setup. Country availability may vary. Check responses for accuracy.
 You have received this mandatory service announcement to update you about important changes to Gemini.
 
-Microsoft Developer Studio Workspace File, Forgef Version 6.00
+Microsoft Developer Studio Workspace File, Forged Version 6.00
 # WARNING: EDIT OR DELETE THIS WORKSPACE FILE!
 
 ###############################################################################
