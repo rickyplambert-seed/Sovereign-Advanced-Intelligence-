@@ -8126,4 +8126,25 @@ Command ~$ Not Found, Do You Mean:
 
 pacman: unrecognized option `--disable-signature-check'
 ~$
-~$
+~$~ $ python interactive_menu.py
+--- Lambert Wealth Intelligent Machine ---
+1. View Workspace Status
+2. List Directory Contents
+3. Exit
+Select an option (1-3): 2
+Files in directory: ['.config', '.ssh', 'lambert.js', '.bash_history', 'checkURL', 'install.sh', '.gnupg', 'target_urls.txt', 'singularity_verify.py', 'sovereign_twins_mirror.py', 'registry.json', '.lesshst', 'sovereign_flow.py', '.ollama', 'sovereign_node_host.py', 'sovereign_client.py', '.hermes', '.cache', '.cargo', '.npm', 'ricky_paul_lambert-root-06021957', '.bashrc', 'POST', 'Host:', 'User-Agent:', 'Content-Length:', 'WARNING:', 'ornith.py', 'MANIFEST.md~', 'identities.py', 'filename.txt', 'Identity', 'remote_controller.py', 'corinth_data', 'corinth_node_config.json', 'corinth_portal.html', 'corinth_matrix_index.json', '.python_history', 'downloads', 'llama.cpp', '.gemini', 'central_hub_init.pyimport argparse', 'central_hub_init.py.save', '.ai_global.py', 'storage', 'sovereign_boot.py', 'tts_registry.py', 'gemini-3', 'google', 'gemini-3.1-pro', 'gemini-3.6-flash', 'usage_pricing.py', 'model_setup_flows.py', 'models.py', 'openai_search_results.txt', 'SYSTEM', '.gitignore', 'projects', 'sovereign_state.py', 'protocol=https', 'host=github.com', 'EOF', 'config.json', 'server.js', 'test_gateway.mjs', '.env', '.DS_Store', 'Phase', 'Initialize', 'git', 'run', '^C', 'local-ai-node', 'lighting_models', 'server.py', '__pycache__', 'OPERATOR', 'STATUS:', 'workspace_status.py', 'interactive_menu.py', 'config.yaml', 'pipelINE.PY.save', 'llama', 'gemini3', 'trixie_292206021957', '.lambert_vault', '.openai', '.gitattributes', '.boot', 'interloper.py', 'gemini.app']
+~ $python interactive_menu.py
+~ $ python interactive_menu.py
+--- Lambert Wealth Intelligent Machine ---
+1. View Workspace Status
+2. List Directory Contents
+3. Exit
+Select an option (1-3): 2
+Files in directory: ['.config', '.ssh', 'lambert.js', '.bash_history', 'checkURL', 'install.sh', '.gnupg', 'target_urls.txt', 'singularity_verify.py', 'sovereign_twins_mirror.py', 'registry.json', '.lesshst', 'sovereign_flow.py', '.ollama', 'sovereign_node_host.py', 'sovereign_client.py', '.hermes', '.cache', '.cargo', '.npm', 'ricky_paul_lambert-root-06021957', '.bashrc', 'POST', 'Host:', 'User-Agent:', 'Content-Length:', 'WARNING:', 'ornith.py', 'MANIFEST.md~', 'identities.py', 'filename.txt', 'Identity', 'remote_controller.py', 'corinth_data', 'corinth_node_config.json', 'corinth_portal.html', 'corinth_matrix_index.json', '.python_history', 'downloads', 'llama.cpp', '.gemini', 'central_hub_init.pyimport argparse', 'central_hub_init.py.save', '.ai_global.py', 'storage', 'sovereign_boot.py', 'tts_registry.py', 'gemini-3', 'google', 'gemini-3.1-pro', 'gemini-3.6-flash', 'usage_pricing.py', 'model_setup_flows.py', 'models.py', 'openai_search_results.txt', 'SYSTEM', '.gitignore', 'projects', 'sovereign_state.py', 'protocol=https', 'host=github.com', 'EOF', 'config.json', 'server.js', 'test_gateway.mjs', '.env', '.DS_Store', 'Phase', 'Initialize', 'git', 'run', '^C', 'local-ai-node', 'lighting_models', 'server.py', '__pycache__', 'OPERATOR', 'STATUS:', 'workspace_status.py', 'interactive_menu.py', 'config.yaml', 'pipelINE.PY.save', 'llama', 'gemini3', 'trixie_292206021957', '.lambert_vault', '.openai', '.gitattributes', '.boot', 'interloper.py', 'gemini.app']
+~ $ python interactive_menu.py
+--- Lambert Wealth Intelligent Machine ---
+1. View Workspace Status
+2. List Directory Contents
+3. Exit
+Select an option (1-3): 1
+Subsystem Status: ONLINE / SECURE
