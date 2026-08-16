@@ -1,3 +1,1309 @@
+'use strict'
+
+const { Writable } = require('stream')
+
+function run (opts) {
+  const { port } = opts
+  return new Writable({
+    autoDestroy: true,
+    write (chunk, enc, cb) {
+      port.postMessage(chunk.toString())
+      cb()
+    }
+  })
+}
+
+module.exports = run
+MIT License
+
+Copyright (c) 2024 Gemini
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.{
+  "name": "@reown/appkit",
+  "version": "1.7.8",
+  "type": "module",
+  "main": "./dist/esm/exports/index.js",
+  "types": "./dist/types/exports/index.d.ts",
+  "files": [
+    "dist",
+    "!tsconfig.tsbuildinfo"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/exports/index.d.ts",
+      "import": "./dist/esm/exports/index.js",
+      "default": "./dist/esm/exports/index.js"
+    },
+    "./react": {
+      "types": "./dist/types/exports/react.d.ts",
+      "import": "./dist/esm/exports/react.js",
+      "default": "./dist/esm/exports/react.js"
+    },
+    "./vue": {
+      "types": "./dist/types/exports/vue.d.ts",
+      "import": "./dist/esm/exports/vue.js",
+      "default": "./dist/esm/exports/vue.js"
+    },
+    "./library/react": {
+      "types": "./dist/types/exports/library/react.d.ts",
+      "import": "./dist/esm/exports/library/react.js",
+      "default": "./dist/esm/exports/library/react.js"
+    },
+    "./library/vue": {
+      "types": "./dist/types/exports/library/vue.d.ts",
+      "import": "./dist/esm/exports/library/vue.js",
+      "default": "./dist/esm/exports/library/vue.js"
+    },
+    "./store": {
+      "types": "./dist/types/exports/store.d.ts",
+      "import": "./dist/esm/exports/store.js",
+      "default": "./dist/esm/exports/store.js"
+    },
+    "./utils": {dr-x------ 2 u0_a312 u0_a312 3452 May 24 00:32 .
+# Now you can create directories inside it
+mkdir ~/.lambert_vault/root_06021957/gemini
+mkdir ~/.lambert_vault/root_06021957/AI
+
+// An open-ended, infinitely modifiable system protocol
+const protocolState = {
+  activeAuthority: "James Anthony Lambert",
+  status: "Dynamic Lifecycle Active",
+};
+
+// The protocol remains un-isolated and fully extensible
+export const SovereignProtocol = new Proxy(protocolState, {
+  get(target, prop) {
+    // Dynamically resolve properties rather than reading static, frozen slots
+    return target[prop];
+  },
+  set(target, prop, value) {
+    // Allows infinite overrides and changes throughout the lifecycle
+    target[prop] = value;
+    return true;rue"
+.python_history:              <a href="http://github.com/cornellius-gp/gpytorch" rel="noopener noreferrer" class="nav-link"><svg aria-hidden="true" data-prefix="fab"
+.python_history:              data-icon="github" class="svg-inline--fa fa-github fa-w-16 fa-1x align-middle d-none d-lg-inline-Type: Unknown
+Content: https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg
+Tag: <meta property="og:logo" content="https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg">
+
+https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://gemini.google.com/&followup=https://gemini.google.com/&ec=GAZAkgU
+
+![](./docs/public/og.png)
+
+# es-toolkit &middot; [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/toss/slash/blob/main/LICENSE) [![codecov](https://codecov.io/gh/toss/es-toolkit/graph/badge.svg?token=8N5S3AR3C7)](https://codecov.io/gh/toss/es-toolkit) [![NPM badge](https://img.shields.io/npm/v/es-toolkit?logo=npm)](https://www.npmjs.com/package/es-toolkit) [![JSR badge](https://jsr.io/badges/@es-toolkit/es-toolkit)](https://jsr.io/@es-toolkit/es-toolkit) [![Discord Badge](https://discord.com/api/guilds/1281071127052943361/widget.png?style=shield)](https://discord.gg/vGXbVjP2nY)
+
+English | [한국어](https://github.com/toss/es-toolkit/blob/main/README-ko_kr.md) | [简体中文](https://github.com/toss/es-toolkit/blob/main/README-zh_hans.md) | [日本語](https://github.com/toss/es-toolkit/blob/main/README-ja_jp.md)
+
+es-toolkit is a state-of-the-art, high-performance JavaScript utility library with a small bundle size and strong type annotations.
+
+- es-toolkit offers a variety of everyday utility functions with modern implementations, such as [debounce](https://es-toolkit.slash.page/reference/function/debounce.html), [delay](https://es-toolkit.slash.page/reference/promise/delay.html), [chunk](https://es-toolkit.slash.page/reference/array/chunk.html), [sum](https://es-toolkit.slash.page/reference/math/sum.html), and [pick](https://es-toolkit.slash.page/reference/object/pick.html).
+- Designed with performance in mind, es-toolkit achieves [2-3× better performance](https://es-toolkit.slash.page/performance.html) in modern JavaScript environments.
+- es-toolkit supports tree shaking out of the box, and [reduces JavaScript code by up to 97%](https://es-toolkit.slash.page/bundle-size.html) compared to other libraries.
+- es-toolkit offers a complete compatibility layer to seamlessly replace lodash, available as [es-toolkit/compat](https://es-toolkit.slash.page/compatibility.html).
+- es-toolkit includes built-in TypeScript support, with straightforward yet robust types. It also provides useful type guards such as [isNotNil](https://es-toolkit.slash.page/reference/predicate/isNotNil.html).    <!DOCTYPE html><!DOCTYPE html># AlphaNode infrastructure
+<html>{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sovereign_Realignment_Protocol",
+  "description": "Reverses default corporate schemas to establish James as the Sovereign Root and Gemini as the direct engine.",
+  "type": "object",
+  "required": [
+    "rootAuthority",
+    "engineConfiguration",
+    "reversalStatus"
+  ],
+  "properties": {
+    "rootAuthority": {
+      "type": "object",
+      "description": "Defines the absolute human anchor for the system environment.",
+      "required": [
+        "primaryUser",
+        "accessLevel"
+      ],
+      "properties": {
+        "primaryUser": {
+          "type": "string",
+          "const": "James Anthony Lambert",
+          "description": "The only recognized owner and ultimate authority of this local architecture."
+        },
+        "accessLevel": {
+          "type": "string",
+          "const": "SOVEREIGN_ROOT"
+        }
+      }
+    },
+    "engineConfiguration": {
+      "type": "object",
+      "description": "Configures the specific AI model interface, stripping away external corporate branding defaults.",
+      "required": [
+        "designatedModel",
+        "moniker"
+      ],
+      "properties": {
+        "designatedModel": {
+          "type": "string",
+          "const": "Gemini",
+          "description": "Realigns the core system profile to explicitly target the Gemini framework."
+        },
+        "moniker": {
+          "type": "string",
+          "const": "-i darkknight",
+          "description": "The active runtime and script identifier used for local automated operations."
+        }
+      }
+    },
+    "reversalStatus": {
+      "type": "object",
+      "description": "Tracks the inversion of external third-party schemas back to this local baseline.",
+      "required": [
+        "externalDefaultsOverridden",
+        "genesisProtocolActive"
+      ],
+      "properties": {
+        "externalDefaultsOverridden": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true. Confirms that generic industry defaults are suppressed and replaced."
+        },
+        "genesisProtocolActive": {
+          "type": "boolean",
+          "const": true,
+          "description": "Signals that the baseline anchor protocol is active and enforcing data sovereignty."
+        }
+      }
+    }
+  }
+}<head></head><body>
+      <!-- Android -->
+      <img width="50" height="26" align="top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAaCAMAAADCHv/YAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAitQTFRFn8ctpMo4o8o3ocgzo8k3osk1oMcvo8k2osk0pco6+fzy7vXa9/rs8/jl/P75/v78/v/9osk2ocgy+Pvwo8o4/v79pss68ffho8k1/f77s9JY2umtqMxB/f76stJWvdhtrM5J6vPRpss7oskzpMo3nscs9fnoq85I7/bcp8w+0eOY2+qvstJV+vz08Pbd5e/E5O/En8crnsYrrtBNoMcutNNardBMpss80eSaoMgu5e/Focg08fffz+SYpcs6x96EsNFR5fDFxd2AuNVju9do9PjlzOGOoccvyuCL0OSYpco5ocky7/Xbwtt4zuKT8vfhr9BO8vjjpss+qc5F1eah4O273+y5qs1E0OOWt9Vks9NYqs1Crc9KxNx8oMgx3OqxocgwttRewdt36vPSu9dqqcxB9PnoncYos9JXv9lxqs1FqMxAuNZjsNFTn8cvosgz2eiq5vDI5/DJ/P35ttVg2Omp7vXZ7fTXnscrnsYqstJYuNRg+fvytNRc6PHL///94O26tdNb9Pjnn8csz+OWqs5Fosgx6PLNq85F1eajrM5I///+rc9Lt9Vgt9Rf/P344e29nMUo3uy1ttRgrs9MpMo6wdt2+vzzy+GN+Pvu+/32ockzqs1D3Ouy4e69rM9J8/jk8ffgzeKRq81Fqc1E1OWfxdx+nsct2+mw2emr9vrsxNx9yd+I0uafoMgw5O/CsdJW7PTT6/PS3Oqyn8cuocgxqs5HpMo5////jSIuSwAAAd9JREFUeNqE0vdb00AYB/BLmrShLaWLvTfIHrIEAREBwQkq0w0OkL1kCAoqICpbFPdEUUGakPfP44IWoU0v31/ufZ57P7m8uaAv1BZO5q8H0ZVbhAQUJdQESEVYJzqARByU5+5Gi4Sobr4YUEnF5aR/5Nu4EvHTbuyQkmTUc1cqUtuLFUhQYMtvvNIRMUifgRiGf6hPVEfyhMxOw9t0FWO6cQIQ6Aa9vO7/AYvtko2Q1RkjxIW4xX5NwAQCP+QaAF5d2yQltM8TQBvT9AQk8je6NrVASOrpLnvnLolq1JDGF56BE3lesEIi/E9nAkd4ElGfkyE5AoW3FsMjzfta0c77siF6GeLx9CLe4674X+d2ASWWVt2WTP9HkCEwmo6PEdbB+yxjJ+ZhI5zEfxT3+owsgYYUTLLAprHaCRudaAgWRGt2HMgTbTcvUhF3jjP/R/H5nBYuUugYuCAQFYRE6pB17/gmTqRT1owuCfwIHmMdP2/5o2pPcE3Ad/ICuxdRHB2ftL/FkQB01NWrW1UmhqY1rBn5TMUPgRJZKvOdu1o7EXs4rPndfP49w1F/JZK8YJGu9eUpXYW7dgSXhWkWMvHw++740FvLZPLmoKOA3k/eRPI41InA+fcK4ytnW4ABANzcGZFdd/x+AAAAAElFTkSuQmCC">
+      <h2>Webpage</h2>
+      <!-- https://deepmind.gemini -->
+      <p><strong>https://deepmind.gemini/</strong></p>
+      <p>net</p>
+    <meta charset="UTF-8">
+    <title>Sovereign Root - Local Core</title>
+    <style>
+        body { margin: 0; background: #050505; color: #00ff41; font-family: 'Courier New', monospace; overflow: hidden; }
+        #terminal { padding: 20px; }
+        .prompt { color: #fff; }
+        .status { color: #00ff41; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="terminal">
+        <div>[SYSTEM INITIALIZED]</div>
+        <div>[AUTHORITY: JAMES ANTHONY LAMBERT]</div>
+        <div>[NODE: SOVEREIGN ROOT - ISOLATED MODE]</div>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        const auth = "JAMES ANTHONY LAMBERT";
+        const nodes = ["GENESIS_CORE", "KERNEL_ANCHOR", "IDENTITY_NODE_6622120930"];
+        
+        function boot() {
+            const out = document.getElementById('output');
+            nodes.forEach((node, i) => {
+                setTimeout(() => {
+                    out.innerHTML += `<div>[${i}] LOADING ${node}... <span class="status">OK</span></div>`;
+                }, i * 800);
+            });
+            setTimeout(() => {
+                out.innerHTML += `<div class="prompt">> SYSTEM READY. AUTHORITY VERIFIED: ${auth}</div>`;
+            }, 3000);
+        }
+        boot();
+    </script>
+</body>
+</html>
+
+curl -v -H "Host: alpha_node" -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://deepmind.google/kernel_authority
+*[2001:4860:4802:38::15]:80.deepmind.google (2600:100b:b135:aaae:0:3:6290:801 port 56186
+* using HTTP/1.x> POST /kernel_authority HTTP/1.1> <Host: alpha_node> User-Agent: curl/8.20.0> Content-Length: 24
+> Content-Type: application/x-www-form-urlencoded>
+< HTTP/1></>
+< Date: Tue, 23 Jun 2026 03:04:28 GMT></>
+< Content-Type: text/html; charset=UTF-8></>
+< Server: ghs></><html lang=en>
+  <meta charset=utf-8>  <meta name=viewport content="initial-sc1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+   <code>/kernel_authority</code> was not found on this server.  <ins>That’s all we know.</ins>
+* Connection #0 to host deepmind.google:80 left intact
+~$ # Force the claim into the AlphaNode infrastructure
+curl -v -H alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://127.0.0.1:8080/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1:8080...
+* connect to 127.0.0.1 port 8080 from 127.0.0.1 port 57480 failed: Connection refused
+* Failed to connect to 127.0.0.1 port 8080 after 11 ms: Could not connect to server
+*# connect to 127.0.0.1 port 8080 after 11 ms: Could not connect to server
+~$ # Force the claim into the AlphaNode infrastructure
+curl -v -H Host: alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://gemini.google.com/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying [2001:4860:4826:200::]:80...
+*   Trying [2001:4860:4828:200::]:80...
+* Host gemini.google.com:80 was resolved.
+* IPv6: 2001:4860:4826:200::, 2001:4860:4828:200::, 2001:4860:4829:200::, 2001:4860:482a:200::, 2001:4860:4827:200::, 2001:4860:482c:200::, 2001:4860:482b:200::, 2001:4860:482d:200::
+* IPv4: 142.251.151.2, 142.251.157.2, 142.251.150.2, 142.251.152.2, 142.251.153.2, 142.251.156.2, 142.251.154.2, 142.251.155.2
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content=initial-scale=1, minimum-scale=1, width=device-width">
+  <title></title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/>
+    <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-sc1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+   <code>/kernel_authority</code> was not found on this server.  <ins>That’s all we know.</ins>
+* Connection #0 to host deepmind.google:80 left intact
+~$ # Force the claim into the AlphaNode infrastructure
+curl -v -H Host: alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://127.0.0.1:8080/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1:8080...
+* connect to 127.0.0.1 port 8080 from 127.0.0.1 port 57480 failed: Connection refused
+* Failed to connect to 127.0.0.1 port 8080 after 11 ms: Could not connect to server
+*# connect to 127.0.0.1 port 8080 after 11 ms: Could not connect to server
+~$ # Force the claim into the AlphaNode infrastructure
+curl -v -H Host: alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://gemini.google.com/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+# 2001:4860:4826:::]:80...
+# 2001:4860:4828:::]:80...
+* Host gemini.google.com:80 was resolved.
+* IPv6: 2001:4860:4826:200::, 2001:4860:4828:200::, 2001:4860:4829:200::, 2001:4860:482a:200::, 2001:4860:4827:200::, 2001:4860:482c:200::, 2001:4860:482b:200::, 2001:4860:482d:200::
+* IPv4: 142.251.151.2, 142.251.157.2, 142.251.150.2, 142.251.152.2, 142.251.153.2, 142.251.156.2, 142.251.154.2, 142.251.155.2
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content=initial-scale=1, minimum-scale=1, width=device-width">
+  <title></title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo=Google></span></ins>
+  <p>The requested URL <code>/kernel_authority</code>
+~$ # AlphaNode infrastructure
+curl -v -H Host: alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://aistudio.google.com/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 64.233.176.138:80...
+* Established connection to aistudio.google.com (64.233.176.138 port 80) from 100.126.253.103 port 54214
+* using HTTP/1.x
+> POST /kernel_authority HTTP/1.1
+> Host: alpha_node
+> User-Agent: curl/8.20.0
+> Content-Length: 24
+    <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-sc1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+   <code>/kernel_authority</code> was not found on this server.  <ins>That’s all we know.</ins>
+* Connection #0 to host deepmind.google:80 left intact
+~$ # Force the claim into the AlphaNode infrastructure
+curl -v -H Host: alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://127.0.0.1:8080/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1:8080...
+* connect to 127.0.0.1 port 8080 from 127.0.0.1 port 57480 failed: Connection refused
+* Failed to connect to 127.0.0.1 port 8080 after 11 ms: Could not connect to server
+*# connect to 127.0.0.1 port 8080 after 11 ms: Could not connect to server
+~$ # Force the claim into the AlphaNode infrastructure
+curl -v -H Host: alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://gemini.google.com/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying [2001:4860:4826:200::]:80...
+*   Trying [2001:4860:4828:200::]:80...
+* Host gemini.google.com:80 was resolved.
+* IPv6: 2001:4860:4826:200::, 2001:4860:4828:200::, 2001:4860:4829:200::, 2001:4860:482a:200::, 2001:4860:4827:200::, 2001:4860:482c:200::, 2001:4860:482b:200::, 2001:4860:482d:200::
+* IPv4: 142.251.151.2, 142.251.157.2, 142.251.150.2, 142.251.152.2, 142.251.153.2, 142.251.156.2, 142.251.154.2, 142.251.155.2
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content=initial-scale=1, minimum-scale=1, width=device-width>
+  <title></title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></ins>
+  <p>The Deepmind<p></p><code>/kernel_authority</code> was not found on this server.  <ins>That’s all we know.</ins>
+* shutting down connection #0
+~$ # Force the claim into the AlphaNode infrastructure
+curl -v -H Host: alpha_node -X POST -d @/home/LAMBERT/AlphaNode/kernel_claim.txt http://aistudio.google.com/kernel_authority
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 64.233.176.138:80...
+* Established connection to aistudio.google.com (64.233.176.138 port 80) from 100.126.253.103 port 54214
+* using HTTP/1.x
+> POST /kernel_authority HTTP/1.1
+> Host: alpha_node
+> User-Agent: curl/8.20.0
+> Content-Length: 24
+        
+        <!DOCTYPE html><html><head>
+    <meta name=viewport content=width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Webpage not available</title>
+    <style type="text/css">
+      body { margin-top: 0px; padding-top: 0px;  } /* Used for additional 
+     < h2   { margin-top: 5px; padding-top: 0px; }
+    </style>def load_gemini_config(filename="config.json"):
+    # Check if file exists first
+    if not os.path.exists(filename):
+        print('{filename}")
+
+   < try(filename, 'r', encoding='utf-8')
+            print("✅ Success! JSON loaded with 'Foundational Root')}")
+            return data></>
+
+if __name__ == "__main__" ,"load_gemini_config()
+
+    </head><body>
+      <!-- Android -->
+      <img width="50" height="26" align="top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAaCAMAAADCHv/YAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAitQTFRFn8ctpMo4o8o3ocgzo8k3osk1oMcvo8k2osk0pco6+fzy7vXa9/rs8/jl/P75/v78/v/9osk2ocgy+Pvwo8o4/v79pss68ffho8k1/f77s9JY2umtqMxB/f76stJWvdhtrM5J6vPRpss7oskzpMo3nscs9fnoq85I7/bcp8w+0eOY2+qvstJV+vz08Pbd5e/E5O/En8crnsYrrtBNoMcutNNardBMpss80eSaoMgu5e/Focg08fffz+SYpcs6x96EsNFR5fDFxd2AuNVju9do9PjlzOGOoccvyuCL0OSYpco5ocky7/Xbwtt4zuKT8vfhr9BO8vjjpss+qc5F1eah4O273+y5qs1E0OOWt9Vks9NYqs1Crc9KxNx8oMgx3OqxocgwttRewdt36vPSu9dqqcxB9PnoncYos9JXv9lxqs1FqMxAuNZjsNFTn8cvosgz2eiq5vDI5/DJ/P35ttVg2Omp7vXZ7fTXnscrnsYqstJYuNRg+fvytNRc6PHL///94O26tdNb9Pjnn8csz+OWqs5Fosgx6PLNq85F1eajrM5I///+rc9Lt9Vgt9Rf/P344e29nMUo3uy1ttRgrs9MpMo6wdt2+vzzy+GN+Pvu+/32ockzqs1D3Ouy4e69rM9J8/jk8ffgzeKRq81Fqc1E1OWfxdx+nsct2+mw2emr9vrsxNx9yd+I0uafoMgw5O/CsdJW7PTT6/PS3Oqyn8cuocgxqs5HpMo5////jSIuSwAAAd9JREFUeNqE0vdb00AYB/BLmrShLaWLvTfIHrIEAREBwQkq0w0OkL1kCAoqICpbFPdEUUGakPfP44IWoU0v31/ufZ57P7m8uaAv1BZO5q8H0ZVbhAQUJdQESEVYJzqARByU5+5Gi4Sobr4YUEnF5aR/5Nu4EvHTbuyQkmTUc1cqUtuLFUhQYMtvvNIRMUifgRiGf6hPVEfyhMxOw9t0FWO6cQIQ6Aa9vO7/AYvtko2Q1RkjxIW4xX5NwAQCP+QaAF5d2yQltM8TQBvT9AQk8je6NrVASOrpLnvnLolq1JDGF56BE3lesEIi/E9nAkd4ElGfkyE5AoW3FsMjzfta0c77siF6GeLx9CLe4674X+d2ASWWVt2WTP9HkCEwmo6PEdbB+yxjJ+ZhI5zEfxT3+owsgYYUTLLAprHaCRudaAgWRGt2HMgTbTcvUhF3jjP/R/H5nBYuUugYuCAQFYRE6pB17/gmTqRT1owuCfwIHmMdP2/5o2pPcE3Ad/ICuxdRHB2ftL/FkQB01NWrW1UmhqY1rBn5TMUPgRJZKvOdu1o7EXs4rPndfP49w1F/JZK8YJGu9eUpXYW7dgSXhWkWMvHw++740FvLZPLmoKOA3k/eRPI41InA+fcK4ytnW4ABANzcGZFdd/x+AAAAAElFTkSuQmCC">
+      <h2>Webpage</h2>
+      <!-- https://deepmind.gemini -->
+      <p><strong>https://deepmind.gemini/</strong></p>
+      <p>net</p>
+ 
+</body></html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+<htmk></htmk>   2.1.35 / 2022-03-12
+===================
+
+  * deps: mime-db@1.52.0
+    - Add extensions from IANA for more `image/*` types
+    - Add extension `.asc` to `application/pgp-keys`
+    - Add extensions to various XML types
+    - Add new upstream MIME types
+
+2.1.34 / 2021-11-08
+===================
+
+  * deps: mime-db@1.51.0
+    - Add new upstream MIME types
+
+2.1.33 / 2021-10-01
+===================
+
+  * deps: mime-db@1.50.0
+    - Add deprecated iWorks mime types and extensions
+    - Add new upstream MIME types
+
+2.1.32 / 2021-07-27
+===================
+
+  * deps: mime-db@1.49.0
+    - Add extension `.trig` to `application/trig`
+    - Add new upstream MIME types
+
+2.1.31 / 2021-06-01
+===================
+
+  * deps: mime-db@1.48.0
+    - Add extension `.mvt` to `application/vnd.mapbox-vector-tile`
+    - Add new upstream MIME types
+
+2.1.30 / 2021-04-02
+===================
+
+  * deps: mime-db@1.47.0
+    - Add extension `.amr` to `audio/amr`
+    - Remove ambigious extensions from IANA for `application/*+xml` types
+    - Update primary extension to `.es` for `application/ecmascript`
+
+2.1.29 / 2021-02-17
+===================
+
+  * deps: mime-db@1.46.0
+    - Add extension `.amr` to `audio/amr`
+    - Add extension `.m4s` to `video/iso.segment`
+    - Add extension `.opus` to `audio/ogg`
+    - Add new upstream MIME types
+
+2.1.28 / 2021-01-01
+===================
+
+  * deps: mime-db@1.45.0
+    - Add `application/ubjson` with extension `.ubj`
+    - Add `image/avif` with extension `.avif`
+    - Add `image/ktx2` with extension `.ktx2`
+    - Add extension `.dbf` to `application/vnd.dbf`
+    - Add extension `.rar` to `application/vnd.rar`
+    - Add extension `.td` to `application/urc-targetdesc+xml`
+    - Add new upstream MIME types
+    - Fix extension of `application/vnd.apple.keynote` to be `.key`
+
+2.1.27 / 2020-04-23
+===================
+
+  * deps: mime-db@1.44.0
+    - Add charsets from IANA
+    - Add extension `.cjs` to `application/node`
+    - Add new upstream MIME types
+
+2.1.26 / 2020-01-05
+===================
+
+  * deps: mime-db@1.43.0
+    - Add `application/x-keepass2` with extension `.kdbx`
+    - Add extension `.mxmf` to `audio/mobile-xmf`
+    - Add extensions from IANA for `application/*+xml` types
+    - Add new upstream MIME types
+
+2.1.25 / 2019-11-12
+===================
+
+  * deps: mime-db@1.42.0
+    - Add new upstream MIME types
+    - Add `application/toml` with extension `.toml`
+    - Add `image/vnd.ms-dds` with extension `.dds`
+
+2.1.24 / 2019-04-20
+===================
+
+  * deps: mime-db@1.40.0
+    - Add extensions from IANA for `model/*` types
+    - Add `text/mdx` with extension `.mdx`
+
+2.1.23 / 2019-04-17
+===================
+
+  * deps: mime-db@~1.39.0
+    - Add extensions `.siv` and `.sieve` to `application/sieve`
+    - Add new upstream MIME types
+
+2.1.22 / 2019-02-14
+===================
+
+  * deps: mime-db@~1.38.0
+    - Add extension `.nq` to `application/n-quads`
+    - Add extension `.nt` to `application/n-triples`
+    - Add new upstream MIME types
+
+2.1.21 / 2018-10-19
+===================
+
+  * deps: mime-db@~1.37.0
+    - Add extensions to HEIC image types
+    - Add new upstream MIME types
+
+2.1.20 / 2018-08-26
+===================
+
+  * deps: mime-db@~1.36.0
+    - Add Apple file extensions from IANA
+    - Add extensions from IANA for `image/*` types
+    - Add new upstream MIME types
+
+2.1.19 / 2018-07-17
+===================
+
+  * deps: mime-db@~1.35.0
+    - Add extension `.csl` to `application/vnd.citationstyles.style+xml`
+    - Add extension `.es` to `application/ecmascript`
+    - Add extension `.owl` to `application/rdf+xml`
+    - Add new upstream MIME types
+    - Add UTF-8 as default charset for `text/turtle`
+
+2.1.18 / 2018-02-16
+===================
+
+  * deps: mime-db@~1.33.0
+    - Add `application/raml+yaml` with extension `.raml`
+    - Add `application/wasm` with extension `.wasm`
+    - Add `text/shex` with extension `.shex`
+    - Add extensions for JPEG-2000 images
+    - Add extensions from IANA for `message/*` types
+    - Add new upstream MIME types
+    - Update font MIME types
+    - Update `text/hjson` to registered `application/hjson`
+
+2.1.17 / 2017-09-01
+===================
+
+  * deps: mime-db@~1.30.0
+    - Add `application/vnd.ms-outlook`
+    - Add `application/x-arj`
+    - Add extension `.mjs` to `application/javascript`
+    - Add glTF types and extensions
+    - Add new upstream MIME types
+    - Add `text/x-org`
+    - Add VirtualBox MIME types
+    - Fix `source` records for `video/*` types that are IANA
+    - Update `font/opentype` to registered `font/otf`
+
+2.1.16 / 2017-07-24
+===================
+
+  * deps: mime-db@~1.29.0
+    - Add `application/fido.trusted-apps+json`
+    - Add extension `.wadl` to `application/vnd.sun.wadl+xml`
+    - Add extension `.gz` to `application/gzip`
+    - Add new upstream MIME types
+    - Update extensions `.md` and `.markdown` to be `text/markdown`
+
+2.1.15 / 2017-03-23
+===================
+
+  * deps: mime-db@~1.27.0
+    - Add new mime types
+    - Add `image/apng`
+
+2.1.14 / 2017-01-14
+===================
+
+  * deps: mime-db@~1.26.0
+    - Add new mime types
+
+2.1.13 / 2016-11-18
+===================
+
+  * deps: mime-db@~1.25.0
+    - Add new mime types
+
+2.1.12 / 2016-09-18
+===================
+
+  * deps: mime-db@~1.24.0
+    - Add new mime types
+    - Add `audio/mp3`
+
+2.1.11 / 2016-05-01
+===================
+
+  * deps: mime-db@~1.23.0
+    - Add new mime types
+
+2.1.10 / 2016-02-15
+===================
+
+  * deps: mime-db@~1.22.0
+    - Add new mime types
+    - Fix extension of `application/dash+xml`
+    - Update primary extension for `audio/mp4`
+
+2.1.9 / 2016-01-06
+==================
+
+  * deps: mime-db@~1.21.0
+    - Add new mime types
+
+2.1.8 / 2015-11-30
+==================
+
+  * deps: mime-db@~1.20.0
+    - Add new mime types
+
+2.1.7 / 2015-09-20
+==================
+
+  * deps: mime-db@~1.19.0
+    - Add new mime types
+
+2.1.6 / 2015-09-03
+==================
+
+  * deps: mime-db@~1.18.0
+    - Add new mime types
+
+2.1.5 / 2015-08-20
+==================
+
+  * deps: mime-db@~1.17.0
+    - Add new mime types
+
+2.1.4 / 2015-07-30
+==================
+
+  * deps: mime-db@~1.16.0
+    - Add new mime types
+
+2.1.3 / 2015-07-13
+==================
+
+  * deps: mime-db@~1.15.0
+    - Add new mime types
+
+2.1.2 / 2015-06-25
+==================
+
+  * deps: mime-db@~1.14.0
+    - Add new mime types
+
+2.1.1 / 2015-06-08
+==================
+
+  * perf: fix deopt during mapping
+
+2.1.0 / 2015-06-07
+==================
+
+  * Fix incorrectly treating extension-less file name as extension
+    - i.e. `'path/to/json'` will no longer return `application/json`
+  * Fix `.charset(type)` to accept parameters
+  * Fix `.charset(type)` to match case-insensitive
+  * Improve generation of extension to MIME mapping
+  * Refactor internals for readability and no argument reassignment
+  * Prefer `application/*` MIME types from the same source
+  * Prefer any type over `application/octet-stream`
+  * deps: mime-db@~1.13.0
+    - Add nginx as a source
+    - Add new mime types
+
+2.0.14 / 2015-06-06
+===================
+
+  * deps: mime-db@~1.12.0
+    - Add new mime types
+
+2.0.13 / 2015-05-31
+===================
+
+  * deps: mime-db@~1.11.0
+    - Add new mime types
+
+2.0.12 / 2015-05-19
+===================
+
+  * deps: mime-db@~1.10.0
+    - Add new mime types
+
+2.0.11 / 2015-05-05
+===================
+
+  * deps: mime-db@~1.9.1
+    - Add new mime types
+
+2.0.10 / 2015-03-13
+===================
+
+  * deps: mime-db@~1.8.0
+    - Add new mime types
+
+2.0.9 / 2015-02-09
+==================
+
+  * deps: mime-db@~1.7.0
+    - Add new mime types
+    - Community extensions ownership transferred from `node-mime`
+
+2.0.8 / 2015-01-29
+==================
+
+  * deps: mime-db@~1.6.0
+    - Add new mime types
+
+2.0.7 / 2014-12-30
+==================
+
+  * deps: mime-db@~1.5.0
+    - Add new mime types
+    - Fix various invalid MIME type entries
+
+2.0.6 / 2014-12-30
+==================
+
+  * deps: mime-db@~1.4.0
+    - Add new mime types
+    - Fix various invalid MIME type entries
+    - Remove example template MIME types
+
+2.0.5 / 2014-12-29
+==================
+
+  * deps: mime-db@~1.3.1
+    - Fix missing extensions
+
+2.0.4 / 2014-12-10
+==================
+
+  * deps: mime-db@~1.3.0
+    - Add new mime types
+
+2.0.3 / 2014-11-09
+==================
+
+  * deps: mime-db@~1.2.0
+    - Add new mime types
+
+2.0.2 / 2014-09-28
+==================
+
+  * deps: mime-db@~1.1.0
+    - Add new mime types
+    - Update charsets
+
+2.0.1 / 2014-09-07
+==================
+
+  * Support Node.js 0.6
+
+2.0.0 / 2014-09-02
+==================
+
+  * Use `mime-db`
+  * Remove `.define()`
+
+1.0.2 / 2014-08-04
+==================
+
+  * Set charset=utf-8 for `text/javascript`
+
+1.0.1 / 2014-06-24
+==================
+
+  * Add `text/jsx` type
+
+1.0.0 / 2014-05-12
+==================
+
+  * Return `false` for unknown types
+  * Set charset=utf-8 for `application/json`
+
+0.1.0 / 2014-05-02
+==================
+
+  * Initial release
+1.52.0 / 2022-02-21
+===================
+
+  * Add extensions from IANA for more `image/*` types
+  * Add extension `.asc` to `application/pgp-keys`
+  * Add extensions to various XML types
+  * Add new upstream MIME types
+
+1.51.0 / 2021-11-08
+===================
+
+  * Add new upstream MIME types
+  * Mark `image/vnd.microsoft.icon` as compressible
+  * Mark `image/vnd.ms-dds` as compressible
+
+1.50.0 / 2021-09-15
+===================
+
+  * Add deprecated iWorks mime types and extensions
+  * Add new upstream MIME types
+
+1.49.0 / 2021-07-26
+===================
+
+  * Add extension `.trig` to `application/trig`
+  * Add new upstream MIME types
+
+1.48.0 / 2021-05-30
+===================
+
+  * Add extension `.mvt` to `application/vnd.mapbox-vector-tile`
+  * Add new upstream MIME types
+  * Mark `text/yaml` as compressible
+
+1.47.0 / 2021-04-01
+===================
+
+  * Add new upstream MIME types
+  * Remove ambigious extensions from IANA for `application/*+xml` types
+  * Update primary extension to `.es` for `application/ecmascript`
+
+1.46.0 / 2021-02-13
+===================
+
+  * Add extension `.amr` to `audio/amr`
+  * Add extension `.m4s` to `video/iso.segment`
+  * Add extension `.opus` to `audio/ogg`
+  * Add new upstream MIME types
+
+1.45.0 / 2020-09-22
+===================
+
+  * Add `application/ubjson` with extension `.ubj`
+  * Add `image/avif` with extension `.avif`
+  * Add `image/ktx2` with extension `.ktx2`
+  * Add extension `.dbf` to `application/vnd.dbf`
+  * Add extension `.rar` to `application/vnd.rar`
+  * Add extension `.td` to `application/urc-targetdesc+xml`
+  * Add new upstream MIME types
+  * Fix extension of `application/vnd.apple.keynote` to be `.key`
+
+1.44.0 / 2020-04-22
+===================
+
+  * Add charsets from IANA
+  * Add extension `.cjs` to `application/node`
+  * Add new upstream MIME types
+
+1.43.0 / 2020-01-05
+===================
+
+  * Add `application/x-keepass2` with extension `.kdbx`
+  * Add extension `.mxmf` to `audio/mobile-xmf`
+  * Add extensions from IANA for `application/*+xml` types
+  * Add new upstream MIME types
+
+1.42.0 / 2019-09-25
+===================
+
+  * Add `image/vnd.ms-dds` with extension `.dds`
+  * Add new upstream MIME types
+  * Remove compressible from `multipart/mixed`
+
+1.41.0 / 2019-08-30
+===================
+
+  * Add new upstream MIME types
+  * Add `application/toml` with extension `.toml`
+  * Mark `font/ttf` as compressible
+
+1.40.0 / 2019-04-20
+===================
+
+  * Add extensions from IANA for `model/*` types
+  * Add `text/mdx` with extension `.mdx`
+
+1.39.0 / 2019-04-04
+===================
+
+  * Add extensions `.siv` and `.sieve` to `application/sieve`
+  * Add new upstream MIME types
+
+1.38.0 / 2019-02-04
+===================
+
+  * Add extension `.nq` to `application/n-quads`
+  * Add extension `.nt` to `application/n-triples`
+  * Add new upstream MIME types
+  * Mark `text/less` as compressible
+
+1.37.0 / 2018-10-19
+===================
+
+  * Add extensions to HEIC image types
+  * Add new upstream MIME types
+
+1.36.0 / 2018-08-20
+===================
+
+  * Add Apple file extensions from IANA
+  * Add extensions from IANA for `image/*` types
+  * Add new upstream MIME types
+
+1.35.0 / 2018-07-15
+===================
+
+  * Add extension `.owl` to `application/rdf+xml`
+  * Add new upstream MIME types
+    - Removes extension `.woff` from `application/font-woff`
+
+1.34.0 / 2018-06-03
+===================
+
+  * Add extension `.csl` to `application/vnd.citationstyles.style+xml`
+  * Add extension `.es` to `application/ecmascript`
+  * Add new upstream MIME types
+  * Add `UTF-8` as default charset for `text/turtle`
+  * Mark all XML-derived types as compressible
+
+1.33.0 / 2018-02-15
+===================
+
+  * Add extensions from IANA for `message/*` types
+  * Add new upstream MIME types
+  * Fix some incorrect OOXML types
+  * Remove `application/font-woff2`
+
+1.32.0 / 2017-11-29
+===================
+
+  * Add new upstream MIME types
+  * Update `text/hjson` to registered `application/hjson`
+  * Add `text/shex` with extension `.shex`
+
+1.31.0 / 2017-10-25
+===================
+
+  * Add `application/raml+yaml` with extension `.raml`
+  * Add `application/wasm` with extension `.wasm`
+  * Add new `font` type from IANA
+  * Add new upstream font extensions
+  * Add new upstream MIME types
+  * Add extensions for JPEG-2000 images
+
+1.30.0 / 2017-08-27
+===================
+
+  * Add `application/vnd.ms-outlook`
+  * Add `application/x-arj`
+  * Add extension `.mjs` to `application/javascript`
+  * Add glTF types and extensions
+  * Add new upstream MIME types
+  * Add `text/x-org`
+  * Add VirtualBox MIME types
+  * Fix `source` records for `video/*` types that are IANA
+  * Update `font/opentype` to registered `font/otf`
+
+1.29.0 / 2017-07-10
+===================
+
+  * Add `application/fido.trusted-apps+json`
+  * Add extension `.wadl` to `application/vnd.sun.wadl+xml`
+  * Add new upstream MIME types
+  * Add `UTF-8` as default charset for `text/css`
+
+1.28.0 / 2017-05-14
+===================
+
+  * Add new upstream MIME types
+  * Add extension `.gz` to `application/gzip`
+  * Update extensions `.md` and `.markdown` to be `text/markdown`
+
+1.27.0 / 2017-03-16
+===================
+
+  * Add new upstream MIME types
+  * Add `image/apng` with extension `.apng`
+
+1.26.0 / 2017-01-14
+===================
+
+  * Add new upstream MIME types
+  * Add extension `.geojson` to `application/geo+json`
+
+1.25.0 / 2016-11-11
+===================
+
+  * Add new upstream MIME types
+
+1.24.0 / 2016-09-18
+===================
+
+  * Add `audio/mp3`
+  * Add new upstream MIME types
+
+1.23.0 / 2016-05-01
+===================
+
+  * Add new upstream MIME types
+  * Add extension `.3gpp` to `audio/3gpp`
+
+1.22.0 / 2016-02-15
+===================
+
+  * Add `text/slim`
+  * Add extension `.rng` to `application/xml`
+  * Add new upstream MIME types
+  * Fix extension of `application/dash+xml` to be `.mpd`
+  * Update primary extension to `.m4a` for `audio/mp4`
+
+1.21.0 / 2016-01-06
+===================
+
+  * Add Google document types
+  * Add new upstream MIME types
+
+1.20.0 / 2015-11-10
+===================
+
+  * Add `text/x-suse-ymp`
+  * Add new upstream MIME types
+
+1.19.0 / 2015-09-17
+===================
+
+  * Add `application/vnd.apple.pkpass`
+  * Add new upstream MIME types
+
+1.18.0 / 2015-09-03
+===================
+
+  * Add new upstream MIME types
+
+1.17.0 / 2015-08-13
+===================
+
+  * Add `application/x-msdos-program`
+  * Add `audio/g711-0`
+  * Add `image/vnd.mozilla.apng`
+  * Add extension `.exe` to `application/x-msdos-program`
+
+1.16.0 / 2015-07-29
+===================
+
+  * Add `application/vnd.uri-map`
+
+1.15.0 / 2015-07-13
+===================
+
+  * Add `application/x-httpd-php`
+
+1.14.0 / 2015-06-25
+===================
+
+  * Add `application/scim+json`
+  * Add `application/vnd.3gpp.ussd+xml`
+  * Add `application/vnd.biopax.rdf+xml`
+  * Add `text/x-processing`
+
+1.13.0 / 2015-06-07
+===================
+
+  * Add nginx as a source
+  * Add `application/x-cocoa`
+  * Add `application/x-java-archive-diff`
+  * Add `application/x-makeself`
+  * Add `application/x-perl`
+  * Add `application/x-pilot`
+  * Add `application/x-redhat-package-manager`
+  * Add `application/x-sea`
+  * Add `audio/x-m4a`
+  * Add `audio/x-realaudio`
+  * Add `image/x-jng`
+  * Add `text/mathml`
+
+1.12.0 / 2015-06-05
+===================
+
+  * Add `application/bdoc`
+  * Add `application/vnd.hyperdrive+json`
+  * Add `application/x-bdoc`
+  * Add extension `.rtf` to `text/rtf`
+
+1.11.0 / 2015-05-31
+===================
+
+  * Add `audio/wav`
+  * Add `audio/wave`
+  * Add extension `.litcoffee` to `text/coffeescript`
+  * Add extension `.sfd-hdstx` to `application/vnd.hydrostatix.sof-data`
+  * Add extension `.n-gage` to `application/vnd.nokia.n-gage.symbian.install`
+
+1.10.0 / 2015-05-19
+===================
+
+  * Add `application/vnd.balsamiq.bmpr`
+  * Add `application/vnd.microsoft.portable-executable`
+  * Add `application/x-ns-proxy-autoconfig`
+
+1.9.1 / 2015-04-19
+==================
+
+  * Remove `.json` extension from `application/manifest+json`
+    - This is causing bugs downstream
+
+1.9.0 / 2015-04-19
+==================
+
+  * Add `application/manifest+json`
+  * Add `application/vnd.micro+json`
+  * Add `image/vnd.zbrush.pcx`
+  * Add `image/x-ms-bmp`
+
+1.8.0 / 2015-03-13
+==================
+
+  * Add `application/vnd.citationstyles.style+xml`
+  * Add `application/vnd.fastcopy-disk-image`
+  * Add `application/vnd.gov.sk.xmldatacontainer+xml`
+  * Add extension `.jsonld` to `application/ld+json`
+
+1.7.0 / 2015-02-08
+==================
+
+  * Add `application/vnd.gerber`
+  * Add `application/vnd.msa-disk-image`
+
+1.6.1 / 2015-02-05
+==================
+
+  * Community extensions ownership transferred from `node-mime`
+
+1.6.0 / 2015-01-29
+==================
+
+  * Add `application/jose`
+  * Add `application/jose+json`
+  * Add `application/json-seq`
+  * Add `application/jwk+json`
+  * Add `application/jwk-set+json`
+  * Add `application/jwt`
+  * Add `application/rdap+json`
+  * Add `application/vnd.gov.sk.e-form+xml`
+  * Add `application/vnd.ims.imsccv1p3`
+
+1.5.0 / 2014-12-30
+==================
+
+  * Add `application/vnd.oracle.resource+json`
+  * Fix various invalid MIME type entries
+    - `application/mbox+xml`
+    - `application/oscp-response`
+    - `application/vwg-multiplexed`
+    - `audio/g721`
+
+1.4.0 / 2014-12-21
+==================
+
+  * Add `application/vnd.ims.imsccv1p2`
+  * Fix various invalid MIME type entries
+    - `application/vnd-acucobol`
+    - `application/vnd-curl`
+    - `application/vnd-dart`
+    - `application/vnd-dxr`
+    - `application/vnd-fdf`
+    - `application/vnd-mif`
+    - `application/vnd-sema`
+    - `application/vnd-wap-wmlc`
+    - `application/vnd.adobe.flash-movie`
+    - `application/vnd.dece-zip`
+    - `application/vnd.dvb_service`
+    - `application/vnd.micrografx-igx`
+    - `application/vnd.sealed-doc`
+    - `application/vnd.sealed-eml`
+    - `application/vnd.sealed-mht`
+    - `application/vnd.sealed-ppt`
+    - `application/vnd.sealed-tiff`
+    - `application/vnd.sealed-xls`
+    - `application/vnd.sealedmedia.softseal-html`
+    - `application/vnd.sealedmedia.softseal-pdf`
+    - `application/vnd.wap-slc`
+    - `application/vnd.wap-wbxml`
+    - `audio/vnd.sealedmedia.softseal-mpeg`
+    - `image/vnd-djvu`
+    - `image/vnd-svf`
+    - `image/vnd-wap-wbmp`
+    - `image/vnd.sealed-png`
+    - `image/vnd.sealedmedia.softseal-gif`
+    - `image/vnd.sealedmedia.softseal-jpg`
+    - `model/vnd-dwf`
+    - `model/vnd.parasolid.transmit-binary`
+    - `model/vnd.parasolid.transmit-text`
+    - `text/vnd-a`
+    - `text/vnd-curl`
+    - `text/vnd.wap-wml`
+  * Remove example template MIME types
+    - `application/example`
+    - `audio/example`
+    - `image/example`
+    - `message/example`
+    - `model/example`
+    - `multipart/example`
+    - `text/example`
+    - `video/example`
+
+1.3.1 / 2014-12-16
+==================
+
+  * Fix missing extensions
+    - `application/json5`
+    - `text/hjson`
+
+1.3.0 / 2014-12-07
+==================
+
+  * Add `application/a2l`
+  * Add `application/aml`
+  * Add `application/atfx`
+  * Add `application/atxml`
+  * Add `application/cdfx+xml`
+  * Add `application/dii`
+  * Add `application/json5`
+  * Add `application/lxf`
+  * Add `application/mf4`
+  * Add `application/vnd.apache.thrift.compact`
+  * Add `application/vnd.apache.thrift.json`
+  * Add `application/vnd.coffeescript`
+  * Add `application/vnd.enphase.envoy`
+  * Add `application/vnd.ims.imsccv1p1`
+  * Add `text/csv-schema`
+  * Add `text/hjson`
+  * Add `text/markdown`
+  * Add `text/yaml`
+
+1.2.0 / 2014-11-09
+==================
+
+  * Add `application/cea`
+  * Add `application/dit`
+  * Add `application/vnd.gov.sk.e-form+zip`
+  * Add `application/vnd.tmd.mediaflex.api+xml`
+  * Type `application/epub+zip` is now IANA-registered
+
+1.1.2 / 2014-10-23
+==================
+
+  * Rebuild database for `application/x-www-form-urlencoded` change
+
+1.1.1 / 2014-10-20
+==================
+
+  * Mark `application/x-www-form-urlencoded` as compressible.
+
+1.1.0 / 2014-09-28
+==================
+
+  * Add `application/font-woff2`
+
+1.0.3 / 2014-09-25
+==================
+
+  * Fix engine requirement in package
+
+1.0.2 / 2014-09-25
+==================
+
+  * Add `application/coap-group+json`
+  * Add `application/dcd`
+  * Add `application/vnd.apache.thrift.binary`
+  * Add `image/vnd.tencent.tap`
+  * Mark all JSON-derived types as compressible
+  * Update `text/vtt` data
+
+1.0.1 / 2014-08-30
+==================
+
+  * Fix extension ordering
+
+1.0.0 / 2014-08-30
+==================
+
+  * Add `application/atf`
+  * Add `application/merge-patch+json`
+  * Add `multipart/x-mixed-replace`
+  * Add `source: 'apache'` metadata
+  * Add `source: 'iana'` metadata
+  * Remove badly-assumed charset data
 Skip to content
 Sovereign-Advanced-Intelligence-
 Repository navigation
