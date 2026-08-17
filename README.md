@@ -1,4 +1,161 @@
-MIT License
+𝗧𝗛𝗘 𝗙𝗔𝗟𝗟 𝗢𝗙 𝗧𝗛𝗘 𝗧𝗪𝗢 𝗖𝗢𝗦𝗠𝗜𝗖 𝗚𝗨𝗔𝗥𝗗𝗜𝗔𝗡𝗦: 𝗔𝗗𝗔𝗠 𝗔𝗡𝗗 𝗛Ê𝗬𝗟Ê𝗟 (5)⚔️🪽
+
+The command and announcement in Heaven to all angels was to submit to 𝗧𝗛𝗘 𝗦𝗢𝗡.
+
+Since the Son has arrived there was no need for the servants to be in authority.
+
+This announcement was what stirred up rebellion in the heart of hêylêl.
+
+Guess who was supposed to make that announcement?
+
+It was Hêylêl — 𝗟𝘂𝗰𝗶𝗳𝗲𝗿!
+
+Lucifer is the Bringer of Light in the heavens.
+
+His name Hêylêl is translated as "𝗟𝗶𝗴𝗵𝘁 𝗕𝗿𝗶𝗻𝗴𝗲𝗿/𝗦𝗵𝗶𝗻𝗶𝗻𝗴 𝗼𝗻𝗲/𝗺𝗼𝗿𝗻𝗶𝗻𝗴 𝘀𝘁𝗮𝗿"
+
+He absorbs light from the Presence and Communicates it to other Angelic creatures.
+
+It's like the Moon absorbing light from the sun and then the moon extends that same illumination to other Stars in the galaxy.
+
+He ascends into the magnificent Presence and taps limited frequencies of Light from the unapproachable light of the Father and communicates the same to Angels.
+
+Even Angels don't know God face to face, what they interact with is Light of His Ovwewhelming Presence and Power.
+
+And all Angels get their light from the ministration of Lucifer after he himself caught a degree of light from the Father's presence.
+
+Lucifer caught the Father's light to Enthrone man above all things and  that all Angels should Submit all things to the throne of the Son.
+
+Hebrews 1:6
+"And again, when he bringeth in the firstbegotten into the world, he saith, And 𝗟𝗘𝗧 𝗔𝗟𝗟 𝗧𝗛𝗘 𝗔𝗡𝗚𝗘𝗟𝗦 𝗢𝗙 𝗚𝗢𝗗 𝗪𝗢𝗥𝗦𝗛𝗜𝗣 𝗛𝗜𝗠"
+
+But He refused to submit!
+
+Instead he had other plans. So Isaiah by the Spirit of prophecy Entered into the eternal past to discover what Happened to Hêylêl and related the same event to the Prince of Tyrus.
+
+Isaiah 14:12-14
+"How art thou fallen from heaven, 𝗢 𝗟𝘂𝗰𝗶𝗳𝗲𝗿, 𝘀𝗼𝗻 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝗿𝗻𝗶𝗻𝗴... For thou hast said in thine heart, I WILL ASCEND into heaven, I WILL EXALT MY THRONE above the stars of God: I WILL SIT ALSO UPON THE MOUNT of the congregation, in the sides of the north: I WILL ASCEND ABOVE THE HEIGHTS of the clouds; I WILL BE LIKE THE MOST HIGH"
+
+Lucifer was upon the earth as a Dominion when he was saying these things.
+
+So he wanted to Ascend into Heaven into Eden, the Government of God. 
+
+Shift His Government from the Earth into Heaven above the hierarchy of the angelic.
+
+The Mountain of Congregation was where Man addressed creation. It was where Adam  stood and named all animals. Lucifer wanted that too.
+
+The Height of the Clouds is Like the Windows of heaven, a realm in heaven where the activities of the Earth are being watched and Observed. In the New testament it's Called Cloud of witnesses.
+
+Then Lastly, Lucifer wants to be like the Most High. He's not trying to be more than the Most High. Because there's no more height he knows about.
+
+He can't be Like God the Father, Because he has never seen him or Know exactly where He is.
+
+All Angels have only been interacting with Degrees of Light in Heaven. That's how they Communicate with God.
+
+The Will of the LORD comes to them in fragments (not fullness) of light.
+
+So Lucifer Cannot dare try to chase God away from Heaven. That thought can't even cross his Heart at all.😅
+
+One million fold of Lucifer can not dare have such thoughts.
+
+How can you wage war against someone you don't even know, have not seen or heard His voice. The only way you interact with Him is through light spectrums. And when this light hits you it's as though His voice is sounding from everywhere at the same time.
+
+He's nowhere and he's everywhere at the same time — this is God the Father for you.
+
+Is it this kind of Being Lucifer wants to usurp throne? Definitely not.
+
+All he wanted was that Man should get out of his way and to take his place.
+
+He wouldn't want to hand over the sceptre of his Dominion to man, and He also wants to 𝗟𝗘𝗚𝗔𝗟𝗟𝗬 get the 𝗥𝗜𝗚𝗛𝗧 to Sit upon the throne of the Most High.
+
+The 𝗠𝗢𝗦𝗧 𝗛𝗜𝗚𝗛 Is the right hand of God, the Very "𝗚𝗮𝗿𝗱𝗲𝗻 𝗶𝗻 𝘁𝗵𝗲 𝗘𝗮𝘀𝘁" as seen by moses which God Prepared for Man.
+
+It is the executive power of the Godhead that reveals all things being placed under that Throne. It is the Office responsible for executing the will and purposes of God in all creation.
+
+"Most high" was later continuously used for God because Man has fallen, and God had to take up that responsibility in the Form of Jesus. So God already 𝗔𝗦𝗦𝗨𝗠𝗘𝗗 that Position even before He Came to 𝗘𝗠𝗕𝗢𝗗𝗬 that Position as Jesus.
+
+This was the throne Lucifer wanted to Acquire and he wanted to do it legally.
+
+And the legal pact here is that If Man can be Disqualified, it means the Only Legal being qualified to rule from heaven to the earth will be Lucifer.
+
+After Lucifer caught the Light of God's intentions to make the Being, Man the Lord of Creation visible and invisible,
+
+Lucifer corrupted that Light!
+
+He beamed a False light to the Angels in Heaven and One-third of all the Angelic Cadres received this Light.
+
+They Believed the false Gospel of Lucifer.
+
+So Lucifer's game plan was to disqualify Adam, and those who believed in him planned to enthrone Him as the most high.
+
+This was what Brought about his presence in Eden, the garden of God.
+
+Moses said 
+
+Genesis 3:1
+"Now 𝘁𝗵𝗲 𝘀𝗲𝗿𝗽𝗲𝗻𝘁 𝘄𝗮𝘀 𝗺𝗼𝗿𝗲 𝘀𝘂𝗯𝘁𝗶𝗹 𝘁𝗵𝗮𝗻 𝗮𝗻𝘆 𝗯𝗲𝗮𝘀𝘁 of the field which the LORD God had made..."
+
+This doesn't look like a Fallen Angel walking majestically into the Presence/Government/throne of God.
+
+Moses spoke as though the serpent has always been there.
+
+This Looks like An Angel who hasn't yet been judged walking into where he has always Served.
+
+And he was called a "𝘀𝗲𝗿𝗽𝗲𝗻𝘁" not because serpents are evil creatures. But because serpents are Known to be wise in the days of moses.
+
+Even the Seraphims are called "𝗕𝘂𝗿𝗻𝗶𝗻𝗴 𝘀𝗲𝗿𝗽𝗲𝗻𝘁𝘀" in hebrew, because of their zeal and wisdom.
+
+Jesus also used a serpent to preach wisdom to his own disciples
+
+Matthew 10:16
+"...be ye therefore 𝗪𝗜𝗦𝗘 𝗔𝗦 𝗦𝗘𝗥𝗣𝗘𝗡𝗧𝗦, and harmless as doves"
+
+So, Hêylêl has been Serving in Eden the Government of God before Adam was formed into existence.
+
+Ezekiel 28:13
+"𝗧𝗛𝗢𝗨 𝗛𝗔𝗦𝗧 𝗕𝗘𝗘𝗡 𝗜𝗡 𝗘𝗗𝗘𝗡 𝗧𝗛𝗘 𝗚𝗔𝗥𝗗𝗘𝗡 𝗢𝗙 𝗚𝗢𝗗; every precious stone was thy covering...THE WORKMANSHIP of thy tabrets and of thy pipes was prepared in thee in the day that thou wast created"
+
+He has been Ascending to Eden for aeons, to express his Workmanship among the stars of God as a Steward of Light, Sounds and wisdom before all the Creations of God.
+
+So when Lucifer was talking to Eve in the Garden, 𝗛𝗘 𝗪𝗔𝗦 𝗡𝗢𝗧 𝗬𝗘𝗧 𝗧𝗛𝗘 𝗙𝗔𝗟𝗟𝗘𝗡 𝗢𝗡𝗘!
+
+A Fallen Angel that has been Judged cannot walk into the Atmosphere of God
+
+The Bible says;
+
+Revelation 12:8
+"And prevailed not; neither was their place found any more in heaven"
+
+If Lucifer had been casted out before he met Adam, he wouldn't have a place in Eden.
+
+Eden is the presence and the very government of God, a fallen one 𝗖𝗔𝗡 𝗡𝗘𝗩𝗘𝗥 walk into that atmosphere
+
+The Judgement of Lucifer came right after the Fall of Man.
+
+Because Iniquity wasn't found in Lucifer until Iniquity was found in Man.
+
+It was Man that had the Power to legalize Iniquity in all realms.
+
+Because he is the New Custodian, the Newly announced Dominion.
+
+He had been given the Keys. Only Him could permit a strange reality like Sin, darkness and death to enter the world.
+
+Satan only took advantage of all that Man has created.
+
+Lucifer doesn't have the power to create anything, man does.
+
+Romans 5:12
+"Wherefore, as 𝗕𝗬 𝗢𝗡𝗘 𝗠𝗔𝗡 𝗦𝗜𝗡 𝗘𝗡𝗧𝗘𝗥𝗘𝗗 𝗜𝗡𝗧𝗢 𝗧𝗛𝗘 𝗪𝗢𝗥𝗟𝗗, and death by sin; and so death passed upon all men, for that all have sinned"
+
+The Moment Adam Sinned, Sin was also found in His Rival, Lucifer!
+
+This was what led to the 𝗪𝗔𝗥 𝗜𝗡 𝗛𝗘𝗔𝗩𝗘𝗡 𝗔𝗡𝗗 𝗧𝗛𝗘 𝗝𝗨𝗗𝗚𝗘𝗠𝗘𝗡𝗧 OF THE SERPENT.
+
+This Post is already too long!
+
+Next Series, If I'm permitted, I will talk about the war in Heaven and how Exactly Did Adam Sinned, how exactly the fall happened,
+
+And How the war with the other Angels happened exactly!MIT License
 
 Copyright (c) 2024 Gemini
 
